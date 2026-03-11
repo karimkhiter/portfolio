@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karim KHITER - Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="pages/about.html">Mon Parcours</a></li>
+                <li><a href="pages/competences.html">Compétences</a></li>
+                <li><a href="pages/projets.html">Projets</a></li>
+                <li><a href="pages/contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="index.html">Accueil</a>
+        <a href="pages/about.html">Mon Parcours</a>
+        <a href="pages/competences.html">Compétences</a>
+        <a href="pages/projets.html">Projets</a>
+        <a href="pages/contact.html">Me contacter</a>
+    </div>
+
+    <div class="main-wrapper">
+        <header class="hero">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            
+            <div class="hero-content">
+                <span class="subtitle">🎓 Étudiant en Data Science — Parcours VCOD</span>
+                
+                <h1 class="hero-title">Me former pour donner du sens <br><span class="highlight-text">aux données.</span></h1>
+                
+                <p class="description">
+                    Actuellement en BUT, j'apprends à automatiser le traitement des données et à construire des tableaux de bord interactifs pour faciliter la prise de décision (Python, SQL, Power BI).
+                </p>
+                
+                <div class="cta-group">
+                    <a href="pages/projets.html" class="btn-primary">Découvrir mes projets d'études →</a>
+                    <a href="files/CV.pdf" target="_blank" class="btn-secondary">Télécharger mon CV</a>
+                </div>
+                
+                <div class="social-proof-text">
+                    <span class="sp-icon">📊</span>
+                    <p><strong>16 projets Data réalisés</strong> : de l'extraction (Scraping/SQL) à la conception de Dashboards (Power BI) dans le cadre de ma formation.</p>
+                </div>
+            </div>
+            
+            <div class="hero-visual" style="position: relative; display: flex; justify-content: center; align-items: center;">
+                
+                <img src="img/assets/profile_pic.png" alt="Photo de Karim KHITER" style="width: 100%; max-width: 380px; border-radius: 20px; border: 2px solid var(--border-color); box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 1/1;">
+                
+                <div class="floating-badge" style="position: absolute; bottom: 20px; right: -10px;">
+                    <span>🚀</span>
+                    <span>En recherche de stage</span>
+                </div>
+            </div>
+
+            <div class="scroll-indicator-wrapper" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10;">
+                <a href="#discover" style="display: flex; flex-direction: column; align-items: center; color: var(--text-light); text-decoration: none; opacity: 0.7; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; font-weight: 600;">Découvrir</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bounce-anim">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <main id="discover">
+            <div class="stack-banner">
+                <p class="stack-title">🛠️ Ma Stack Technique & Outils en apprentissage</p>
+                <div class="stack-track">
+                    <span class="stack-item"><span class="stack-icon">🐍</span> Python</span>
+                    <span class="stack-item"><span class="stack-icon">📊</span> Power BI</span>
+                    <span class="stack-item"><span class="stack-icon">🗄️</span> SQL</span>
+                    <span class="stack-item"><span class="stack-icon">🐼</span> Pandas</span>
+                    <span class="stack-item"><span class="stack-icon">🦆</span> DuckDB</span>
+                    <span class="stack-item"><span class="stack-icon">⚙️</span> Apache HOP</span>
+                    <span class="stack-item"><span class="stack-icon">📈</span> VBA</span>
+                </div>
+            </div>
+
+            <section class="home-section" style="background: var(--card-bg-2); border-radius: 20px; border: 1px solid var(--border-color); padding: 4rem 5%; margin: 4rem auto; max-width: 1200px;">
+                <div class="about-preview">
+                    
+                    <div class="code-editor" style="width: 100%; max-width: 400px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <div class="editor-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="filename">profile_query.sql</span>
+                        </div>
+                        <div class="editor-body">
+<pre><code><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> Etudiants
+<span class="keyword">WHERE</span> prenom = <span class="string">'Karim'</span>
+  <span class="keyword">AND</span> formation = <span class="string">'BUT SD'</span>
+  <span class="keyword">AND</span> skills <span class="keyword">IN</span> (
+      <span class="string">'SQL'</span>, <span class="string">'Python'</span>,
+      <span class="string">'ETL'</span>, <span class="string">'DataViz'</span>
+  );<span class="cursor"></span></code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <h3>Un profil technique et humain</h3>
+                        <p>Au-delà de mon attrait pour l'architecture des données, mon parcours étudiant est marqué par un fort engagement associatif, ma passion pour le football et un grand attrait pour les voyages. Je suis convaincu qu'un bon projet Data nécessite autant de rigueur technique que d'ouverture d'esprit.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <h4>👑 Leadership</h4>
+                                <p>Président de l'association étudiante de l'IUT. Coordination d'équipes et gestion de projets étudiants.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>🌍 Ouverture</h4>
+                                <p>Ambassadeur Jeune pour la ville de Méricourt. Échanges culturels et accueil de délégations internationales.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem;">
+                            <a href="pages/about.html" class="btn-secondary">Découvrir mon parcours complet</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-section" style="margin-bottom: 2rem;">
+                <h2 class="section-title">Mes travaux récents</h2>
+                
+                <div class="projects-grid" style="padding: 0; margin-bottom: 3rem;">
+                    <article class="project-card border-traiter">
+                        <img src="img/projets/S206.png" alt="Data Pipeline Retail" class="project-img">
+                        <div class="project-content">
+                            <div class="project-tags-comp"><span class="tag-comp tag-traiter">Traiter</span><span class="tag-comp tag-valoriser">Valoriser</span></div>
+                            <h3 class="project-title">S206 - Analyse, Reporting & Datavisualisation</h3>
+                            <p class="project-desc">Projet d'études : Scraping massif du site Intermarché, nettoyage complexe des doublons et initiation au dashboard décisionnel.</p>
+                            <a href="pages/projets/Universitaires/S2/S206.html" class="btn-project">Voir le projet</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card border-developper">
+                        <img src="img/projets/S301.png" alt="Scraping Blue Buffalo" class="project-img">
+                        <div class="project-content">
+                            <div class="project-tags-comp"><span class="tag-comp tag-traiter">Traiter</span><span class="tag-comp tag-developper">Développer</span></div>
+                            <h3 class="project-title">S301 - Collecte Automatisée de Données Web</h3>
+                            <p class="project-desc">Création d'un script de scraping avec Playwright et Pandas pour extraire et structurer les données d'un site e-commerce.</p>
+                            <a href="pages/projets/Universitaires/S3/S301.html" class="btn-project">Voir le projet</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="pages/projets.html" class="btn-primary">Voir tous mes projets (16) →</a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-logo">Karim K.</div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/karim-khiter/" target="_blank">LinkedIn</a>
+                    <a href="mailto:pro.khiter.karim@gmail.com">Email</a>
+                    <a href="pages/contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Karim KHITER. BUT Science des Données — Parcours VCOD.
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

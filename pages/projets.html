@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Karim KHITER</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">Mon Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../index.html">Accueil</a>
+        <a href="about.html">Mon Parcours</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="contact.html">Me contacter</a>
+    </div>
+
+    <header class="page-header">
+        <h1>Projets d'études & Associatifs</h1>
+        <p style="margin-top: 10px; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+            Ces travaux illustrent mon apprentissage progressif de la chaîne data, de la collecte brute à la restitution, face à des problématiques concrètes.
+        </p>
+    </header>
+
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 8% 1.5rem;">
+        <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-left: 3px solid var(--accent-color); padding: 1rem 1.4rem; display: flex; align-items: flex-start; gap: 0.9rem; border-radius: 8px;">
+            <span style="font-size: 1.1rem; flex-shrink: 0; margin-top: 1px;">📌</span>
+            <p style="color: var(--text-light); font-size: 0.9rem; line-height: 1.65; margin: 0;">
+                L'ensemble de mes travaux se trouve ci-dessous. <strong>Les livrables ne sont actuellement pas disponibles au téléchargement</strong>, car je suis en train de les modifier et de les nettoyer afin de les rendre parfaitement conformes à une diffusion publique.
+            </p>
+        </div>
+    </div>
+
+    <div class="filter-section" style="padding-top: 0;">
+        <div class="filter-group sort-group" style="margin-bottom: 1.5rem;">
+            <span class="filter-label">Trier par :</span>
+            <select id="sort-select" style="padding: 8px 12px; border-radius: 6px; background: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); font-family: 'Inter', sans-serif; cursor: pointer; outline: none;">
+                <option value="pertinence">Pertinence (Mes meilleurs projets d'abord)</option>
+                <option value="date-desc">Plus récent au plus ancien</option>
+                <option value="date-asc">Plus ancien au plus récent</option>
+            </select>
+        </div>
+        <div class="filter-separator"></div>
+        <div class="filter-group">
+            <span class="filter-label">Type de projet</span>
+            <div class="filter-pills">
+                <button class="filter-pill active" data-group="type" data-filter="all">Tous</button>
+                <button class="filter-pill" data-group="type" data-filter="Universitaire">🎓 Universitaire</button>
+                <button class="filter-pill" data-group="type" data-filter="Personnel">💡 Personnel</button>
+            </div>
+        </div>
+        <div class="filter-separator"></div>
+        <div class="filter-group">
+            <span class="filter-label">Technologies (sélection multiple)</span>
+            <div class="filter-pills">
+                <button class="filter-pill active" data-group="tech" data-filter="all">Toutes</button>
+                <button class="filter-pill" data-group="tech" data-filter="Python">Python</button>
+                <button class="filter-pill" data-group="tech" data-filter="R">R / RStudio</button>
+                <button class="filter-pill" data-group="tech" data-filter="SQL">SQL</button>
+                <button class="filter-pill" data-group="tech" data-filter="Excel">Excel</button>
+                <button class="filter-pill" data-group="tech" data-filter="PowerBI">Power BI</button>
+                <button class="filter-pill" data-group="tech" data-filter="ETL">ETL</button>
+                <button class="filter-pill" data-group="tech" data-filter="Scraping">Scraping</button>
+                <button class="filter-pill" data-group="tech" data-filter="Pandas">Pandas</button>
+                <button class="filter-pill" data-group="tech" data-filter="DuckDB">DuckDB</button>
+                <button class="filter-pill" data-group="tech" data-filter="VBA">VBA</button>
+                <button class="filter-pill" data-group="tech" data-filter="Statistiques">Statistiques</button>
+                <button class="filter-pill" data-group="tech" data-filter="DataViz">DataViz</button>
+                <button class="filter-pill" data-group="tech" data-filter="Open Data">Open Data</button>
+                <button class="filter-pill" data-group="tech" data-filter="Enquête">Enquête</button>
+                <button class="filter-pill" data-group="tech" data-filter="RGPD">RGPD</button>
+            </div>
+        </div>
+        <div class="filter-separator"></div>
+        <div class="filter-group">
+            <span class="filter-label">Compétence BUT SD (sélection multiple)</span>
+            <div class="filter-pills">
+                <button class="filter-pill active" data-group="comp" data-filter="all">Toutes</button>
+                <button class="filter-pill" data-group="comp" data-filter="Traiter">🗄️ Traiter</button>
+                <button class="filter-pill" data-group="comp" data-filter="Analyser">📊 Analyser</button>
+                <button class="filter-pill" data-group="comp" data-filter="Valoriser">📈 Valoriser</button>
+                <button class="filter-pill" data-group="comp" data-filter="Développer">🤖 Développer</button>
+            </div>
+        </div>
+    </div>
+
+    <p class="projects-count"><span id="count-display">20</span> projet(s) affiché(s)</p>
+
+    <section class="projects-grid" id="projects-grid">
+
+        <article class="project-card"
+            data-date="301" data-pertinence="1"
+            data-type="Universitaire"
+            data-tags="Python, Scraping, Pandas, Excel"
+            data-comp="Traiter, Analyser, Valoriser, Développer">
+            <img src="../img/projets/S301.png" alt="Scraping Blue Buffalo" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span class="tag-univ">Universitaire</span>
+                    <span style="background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 2px 8px rgba(249, 115, 22, 0.4);">🔥 Projet Phare</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                    <span class="tag-comp tag-developper">Développer</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Python</span>
+                    <span class="tag-tech">Scraping</span>
+                    <span class="tag-tech">Pandas</span>
+                </div>
+                <h3 class="project-title">S301 - Collecte Automatisée de Données Web</h3>
+                <p class="project-desc">Développement d'un script d'extraction automatisé afin de centraliser et structurer massivement les données d'un catalogue produit, permettant l'analyse concurrentielle.</p>
+                <a href="projets/Universitaires/S3/S301.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="302" data-pertinence="2"
+            data-type="Universitaire"
+            data-tags="ETL, SQL, Apache HOP"
+            data-comp="Traiter, Valoriser">
+            <img src="../img/projets/S302.png" alt="ETL Datawarehouse" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span class="tag-univ">Universitaire</span>
+                    <span style="background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 2px 8px rgba(249, 115, 22, 0.4);">🔥 Projet Phare</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">ETL</span>
+                    <span class="tag-tech">Apache HOP</span>
+                    <span class="tag-tech">SQL</span>
+                </div>
+                <h3 class="project-title">S302 - Intégration de Données (Datawarehouse)</h3>
+                <p class="project-desc">Construction d'une architecture relationnelle pérenne : extraction et transformation de données publiques (XML/XPath) via Apache HOP pour alimenter un Datawarehouse prêt à l'emploi.</p>
+                <a href="projets/Universitaires/S3/S302.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="2510" data-pertinence="3"
+            data-type="Universitaire"
+            data-tags="Python, Pandas"
+            data-comp="Traiter, Développer">
+            <img src="../img/projets/quiz_llm.png" alt="Quiz IA HuggingFace" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span class="tag-univ">Universitaire</span>
+                    <span style="background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 2px 8px rgba(249, 115, 22, 0.4);">🔥 Projet Phare</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-developper">Développer</span>
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Python</span>
+                    <span class="tag-tech">IA (LLM)</span>
+                    <span class="tag-tech">Dash</span>
+                </div>
+                <h3 class="project-title">Application Web de Quiz corrigé par IA</h3>
+                <p class="project-desc">Développement d'une interface Dash dynamique générant des quiz depuis un fichier YAML, avec correction automatisée des réponses par un LLM.</p>
+                <a href="projets/Universitaires/S3/projet-python-quiz-llm.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="2602" data-pertinence="4"
+            data-type="Personnel"
+            data-tags="SQL, Web"
+            data-comp="Traiter, Valoriser, Développer">
+            <img src="../img/projets/ERP.png" alt="Caisse BDE Estidiantine" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="background: var(--text-muted); color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">💡 Personnel / Asso</span>
+                    <span style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);">⭐ Projet Majeur</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-developper">Développer</span>
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">PHP / JS</span>
+                    <span class="tag-tech">SQL</span>
+                </div>
+                <h3 class="project-title">Application de Caisse & Gestion de Stocks (BDE)</h3>
+                <p class="project-desc">Création complète, de la base de données à l'interface, d'un point de vente connecté pour numériser la gestion financière du Bureau des Étudiants.</p>
+                <a href="projets/Personnels/projet-bde-erp.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="206" data-pertinence="5"
+            data-type="Universitaire"
+            data-tags="Scraping, PowerBI, Excel, DataViz"
+            data-comp="Traiter, Analyser, Valoriser">
+            <img src="../img/projets/S206.png" alt="Data Pipeline Retail" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span class="tag-univ">Universitaire</span>
+                    <span style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);">⭐ Projet Majeur</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Scraping</span>
+                    <span class="tag-tech">Power BI</span>
+                    <span class="tag-tech">Excel</span>
+                </div>
+                <h3 class="project-title">S206 - Analyse, Reporting & Datavisualisation</h3>
+                <p class="project-desc">Conception d'une chaîne décisionnelle complète (scraping, nettoyage de doublons complexes et création d'un dashboard) pour piloter l'analyse économique locale d'un supermarché.</p>
+                <a href="projets/Universitaires/S2/S206.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="304" data-pertinence="6"
+            data-type="Universitaire"
+            data-tags="RGPD, Conformité"
+            data-comp="Traiter, Analyser, Valoriser">
+            <img src="../img/projets/S304.png" alt="Conformité RGPD" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">RGPD</span>
+                    <span class="tag-tech">Droit Data</span>
+                </div>
+                <h3 class="project-title">S304 - Conformité Réglementaire & RGPD</h3>
+                <p class="project-desc">Cartographie et sécurisation des traitements de données sensibles (biométrie) pour une armurerie. Réalisation des registres CNIL pour garantir la licéité légale des processus.</p>
+                <a href="projets/Universitaires/S3/S304.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="204" data-pertinence="8"
+            data-type="Universitaire"
+            data-tags="PowerBI, DataViz, Open Data"
+            data-comp="Traiter, Analyser, Valoriser">
+            <img src="../img/projets/S204.png" alt="Challenge Dataviz" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Power BI</span>
+                    <span class="tag-tech">DataViz</span>
+                    <span class="tag-tech">Open Data</span>
+                </div>
+                <h3 class="project-title">S204 - Datavisualisation (Challenge National)</h3>
+                <p class="project-desc">Production d'un dashboard Power BI sous forte pression (Hackathon 8h chrono) pour vulgariser des données massives de l'INSEE sur la scolarisation des jeunes.</p>
+                <a href="projets/Universitaires/S2/S204.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="2502" data-pertinence="9"
+            data-type="Universitaire"
+            data-tags="Excel, VBA"
+            data-comp="Traiter, Développer">
+            <img src="../img/projets/vba_immo.png" alt="Planning VBA Immobilier" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                    <span class="tag-comp tag-developper">Développer</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">VBA</span>
+                    <span class="tag-tech">Excel</span>
+                </div>
+                <h3 class="project-title">Application de Planning Immobilier</h3>
+                <p class="project-desc">Programmation de A à Z en VBA pour transformer un tableur Excel en véritable outil métier interactif (CRUD et gestion des conflits) pour une agence immobilière.</p>
+                <a href="projets/Universitaires/S2/projet_vba_immobilier.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="201" data-pertinence="10"
+            data-type="Universitaire"
+            data-tags="SQL, Access"
+            data-comp="Traiter">
+            <img src="../img/projets/S201.png" alt="Implémentation BDD" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">SQL</span>
+                    <span class="tag-tech">Microsoft Access</span>
+                </div>
+                <h3 class="project-title">S201 - Conception & Implémentation d'une BDD</h3>
+                <p class="project-desc">Conception de l'architecture backend complète (MCD/MLD) d'une boutique, suivie du développement d'une application métier fonctionnelle pour garantir l'intégrité des saisies.</p>
+                <a href="projets/Universitaires/S2/S201.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="101" data-pertinence="11"
+            data-type="Universitaire"
+            data-tags="SQL, DuckDB, Excel"
+            data-comp="Traiter">
+            <img src="../img/projets/S101.png" alt="S101 - Reporting SQL Grand Est" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">SQL</span>
+                    <span class="tag-tech">DuckDB</span>
+                    <span class="tag-tech">Excel</span>
+                </div>
+                <h3 class="project-title">S101 - Reporting depuis un SGBD Relationnel</h3>
+                <p class="project-desc">Manipulation d'une architecture de base de données via DuckDB : création de requêtes SQL complexes pour segmenter et filtrer les entreprises du Grand Est en vue d'un reporting.</p>
+                <a href="projets/Universitaires/S1/S101.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="303" data-pertinence="12"
+            data-type="Universitaire"
+            data-tags="R, Statistiques"
+            data-comp="Analyser, Valoriser">
+            <img src="../img/projets/S303.png" alt="Séries Temporelles" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">R / RStudio</span>
+                    <span class="tag-tech">Statistiques</span>
+                </div>
+                <h3 class="project-title">S303 - Prévision de Données Temporelles</h3>
+                <p class="project-desc">Modélisation de données chronologiques sous R afin d'identifier les tendances post-COVID du trafic aérien et produire des scénarios de prévisions exploitables pour les compagnies.</p>
+                <a href="projets/Universitaires/S3/S303.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="102" data-pertinence="13"
+            data-type="Universitaire"
+            data-tags="VBA, Excel"
+            data-comp="Traiter">
+            <img src="../img/projets/S102.png" alt="Classement ELO Ligue 1" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-traiter">Traiter</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">VBA</span>
+                    <span class="tag-tech">Excel</span>
+                </div>
+                <h3 class="project-title">S102 - Écriture/Lecture de Fichiers & Algorithmique</h3>
+                <p class="project-desc">Automatisation du calcul de performance sportive (méthode ELO) sur des milliers de matchs historiques pour gagner un temps précieux en remplaçant la saisie manuelle.</p>
+                <a href="projets/Universitaires/S1/S102.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="205" data-pertinence="14"
+            data-type="Universitaire"
+            data-tags="Excel, Finance, DataViz"
+            data-comp="Valoriser">
+            <img src="../img/projets/S205.png" alt="Indicateurs KPI Finance" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Excel</span>
+                    <span class="tag-tech">Finance</span>
+                    <span class="tag-tech">DataViz</span>
+                </div>
+                <h3 class="project-title">S205 - Construction d'Indicateurs de Performance</h3>
+                <p class="project-desc">Création d'indicateurs de rentabilité (BNPA, plus-values) sur Excel pour émettre une note de recommandation d'investissement stratégique claire et justifiée.</p>
+                <a href="projets/Universitaires/S2/S205.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="203" data-pertinence="15"
+            data-type="Universitaire"
+            data-tags="R, Statistiques"
+            data-comp="Analyser">
+            <img src="../img/projets/S203.png" alt="Régression linéaire" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">R / RStudio</span>
+                    <span class="tag-tech">Statistiques</span>
+                </div>
+                <h3 class="project-title">S203 - Régression sur Données Réelles</h3>
+                <p class="project-desc">Ajustement d'un modèle de régression linéaire sous R afin de valider des hypothèses statistiques et comprendre l'impact des variables techniques sur les capacités automobiles.</p>
+                <a href="projets/Universitaires/S2/S203.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="202" data-pertinence="16"
+            data-type="Universitaire"
+            data-tags="R, Statistiques, Open Data"
+            data-comp="Analyser">
+            <img src="../img/projets/S202.png" alt="Estimation par échantillonnage" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">R / RStudio</span>
+                    <span class="tag-tech">Statistiques</span>
+                    <span class="tag-tech">Open Data</span>
+                </div>
+                <h3 class="project-title">S202 - Estimation par Échantillonnage & Inférence</h3>
+                <p class="project-desc">Construction d'intervalles de confiance et simulations probabilistes sous R pour évaluer avec précision les données globales de la CAF à partir d'échantillons représentatifs.</p>
+                <a href="projets/Universitaires/S2/S202.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="106" data-pertinence="17"
+            data-type="Universitaire"
+            data-tags="Excel, Statistiques, Enquête"
+            data-comp="Valoriser">
+            <img src="../img/projets/S106.png" alt="Enquête IA étudiants" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Excel</span>
+                    <span class="tag-tech">Enquête</span>
+                    <span class="tag-tech">Statistiques</span>
+                </div>
+                <h3 class="project-title">S106 - Mise en Œuvre d'une Enquête Statistique</h3>
+                <p class="project-desc">Création d'une enquête anti-biais, collecte sur le terrain, nettoyage des résultats et restitution infographique pour cartographier les usages réels de l'IA en milieu étudiant.</p>
+                <a href="projets/Universitaires/S1/S106.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="105" data-pertinence="18"
+            data-type="Universitaire"
+            data-tags="DataViz, Open Data"
+            data-comp="Valoriser">
+            <img src="../img/projets/S105.png" alt="Présentation en anglais" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Open Data</span>
+                    <span class="tag-tech">DataViz</span>
+                </div>
+                <h3 class="project-title">S105 - Présentation en Anglais d'un Territoire</h3>
+                <p class="project-desc">Traitement d'un jeu de données gouvernemental pour en extraire des KPIs sociaux pertinents, présentés lors d'un pitch technique entièrement en anglais.</p>
+                <a href="projets/Universitaires/S1/S105.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="104" data-pertinence="19"
+            data-type="Universitaire"
+            data-tags="Excel, Statistiques, DataViz"
+            data-comp="Valoriser">
+            <img src="../img/projets/S104.png" alt="Données entreprise" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-valoriser">Valoriser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Excel</span>
+                    <span class="tag-tech">Statistiques</span>
+                </div>
+                <h3 class="project-title">S104 - Production de Données en Entreprise</h3>
+                <p class="project-desc">Exploitation de méthodes statistiques classiques (Loi de Pareto, Scoring RFM, Méthode ABC) pour identifier les leviers d'optimisation financière et logistique d'une entreprise.</p>
+                <a href="projets/Universitaires/S1/S104.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <article class="project-card"
+            data-date="103" data-pertinence="20"
+            data-type="Universitaire"
+            data-tags="Excel, Statistiques"
+            data-comp="Analyser">
+            <img src="../img/projets/S103.png" alt="Analyse exploratoire" class="project-img">
+            <div class="project-content">
+                <div class="project-tags-type">
+                    <span class="tag-univ">Universitaire</span>
+                </div>
+                <div class="project-tags-comp">
+                    <span class="tag-comp tag-analyser">Analyser</span>
+                </div>
+                <div class="project-tags-tech">
+                    <span class="tag-tech">Excel</span>
+                    <span class="tag-tech">Statistiques</span>
+                </div>
+                <h3 class="project-title">S103 - Préparation & Analyse Exploratoire de Données</h3>
+                <p class="project-desc">Nettoyage profond d'un jeu de données brut et calcul d'indicateurs descriptifs pour mettre en évidence les corrélations majeures responsables de l'accidentologie routière.</p>
+                <a href="projets/Universitaires/S1/S103.html" class="btn-project">Voir le détail du projet</a>
+            </div>
+        </article>
+
+        <div class="no-results" id="no-results" style="display: none;">
+            <p>🔍 Aucun projet ne correspond aux filtres sélectionnés.</p>
+        </div>
+
+    </section>
+    
+    </section> <div style="text-align: center; margin-top: 1rem; margin-bottom: 4rem;">
+        <button id="voir-plus-btn" class="btn-secondary" style="display: none; cursor: pointer; border: 1px solid var(--border-color); background: var(--card-bg); font-family: inherit; padding: 0.85rem 2.5rem; border-radius: 8px; color: var(--text-color); font-weight: 600; font-size: 0.95rem; transition: transform 0.2s, background 0.2s;">
+            Afficher plus de projets 👇
+        </button>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

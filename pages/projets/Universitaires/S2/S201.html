@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ 2.01 — BDD Boutique Jeux Vidéo - Karim KHITER</title>
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../../../../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../../../../index.html">Accueil</a></li>
+                <li><a href="../../../about.html">Mon Parcours</a></li>
+                <li><a href="../../../competences.html">Compétences</a></li>
+                <li><a href="../../../projets.html" class="active">Projets</a></li>
+                <li><a href="../../../contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-detail-header bg-traiter">
+        <h1>Conception et Implémentation d'une BDD — Boutique de Jeux Vidéo</h1>
+        <div class="project-meta">
+            <span>📅 Semestre 2</span>
+            <span>🎓 SAÉ 2.01</span>
+            <span>⏱️ 10h</span>
+        </div>
+        
+        <div class="project-authors">
+            <span class="author-label">Projet encadré par :</span>
+            <a href="https://www.linkedin.com/in/girarddaniel/" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+                Daniel GIRARD
+            </a>
+            <a href="https://www.linkedin.com/in/st%C3%A9phane-herby-39387a170/" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+                Stéphane HERBY
+            </a>
+        </div>
+
+        <div class="project-authors" style="margin-top: 1rem; padding-top: 1rem;">
+            <span class="author-label">Réalisé par :</span>
+            <a href="https://www.linkedin.com/in/karim-khiter/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+                Karim KHITER
+            </a>
+            <a href="https://www.linkedin.com/in/esso-lotie-prince-ago-bazaa-b39a8b332/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+                Esso-Lotie Prince AGO BAZAA
+            </a>
+            <a href="https://www.linkedin.com/in/oscar-marchetti-797a94332/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+                Oscar MARCHETTI
+            </a>
+        </div>
+    </header>
+
+    <main class="project-body">
+
+        <section class="detail-section">
+            <h2>Fiche d'Identité</h2>
+            <div class="info-grid">
+
+                <div class="info-block" style="border-left-color: var(--color-traiter);">
+                    <h3>🎯 Compétence ciblée</h3>
+                    <p>
+                        <span class="tag-comp tag-traiter" style="font-size:0.9rem;">Traiter</span>
+                        &nbsp;Traiter des données à des fins décisionnelles
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>🛠️ Technologies & Outils</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">Microsoft Access</span>
+                        <span class="resource-tag">Looping (MCD/MLD)</span>
+                        <span class="resource-tag">SQL</span>
+                        <span class="resource-tag">Modélisation Merise</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>📚 Ressources mobilisées</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">R2.01 — Reporting et Datavisualisation</span>
+                        <span class="resource-tag">R2.02 — BDD relationnelles 2</span>
+                        <span class="resource-tag">R2.03 — Bases de la programmation 2</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>🔑 Apprentissages Critiques</h3>
+                    <ul style="font-size: 0.85rem;">
+                        <li><strong>AC11.01 |</strong> Interpréter et prendre en compte le besoin</li>
+                        <li style="margin-top:0.4rem;"><strong>AC11.02 |</strong> Respecter les formalismes de notation</li>
+                        <li style="margin-top:0.4rem;"><strong>AC11.03 |</strong> Connaître la syntaxe des langages (SQL)</li>
+                        <li style="margin-top:0.4rem;"><strong>AC11.04 |</strong> Maîtriser la structure des données à exploiter</li>
+                        <li style="margin-top:0.4rem;"><strong>AC11.06 |</strong> Intérêt de la programmation (IHM Access)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Contexte et Mise en Situation</h2>
+            <div class="project-scenario" style="border-left-color: var(--color-traiter);">
+                <h3 style="color: var(--color-traiter);">Le Scénario</h3>
+                <p>
+                    La base de données est le cœur du système d'information de toute entreprise. Pour cette SAÉ, nous avions carte blanche pour imaginer un concept d'entreprise et concevoir l'intégralité de son système de gestion de données. Nous avons choisi de modéliser <strong>une boutique de jeux vidéo</strong>. 
+                    L'objectif : concevoir l'architecture de la base, l'implémenter, et développer une application complète permettant à un gérant d'administrer ses stocks, ses ventes et ses clients de manière intuitive.
+                </p>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 0.6rem; color: var(--text-color);">Problématique</h3>
+            <p style="color: var(--text-light);">
+                Comment traduire les processus métiers réels d'un commerce (gestion des fournisseurs, stocks, commandes clients) en un Modèle Conceptuel de Données (MCD) robuste, puis développer une application SGBD fonctionnelle, sécurisée et "User-Friendly" pour le client final ?
+            </p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Démarche Technique</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-traiter);">Étape 1 — Analyse des besoins et Modélisation (Looping)</h3>
+                <p>
+                    Avant de coder, nous avons cartographié les règles de gestion de la boutique : un client peut acheter plusieurs jeux, un jeu appartient à un ou plusieurs genres, un fournisseur approvisionne le stock, etc. Nous avons modélisé ces règles via un <strong>Modèle Conceptuel des Données (MCD)</strong> sur le logiciel Looping, en respectant les cardinalités strictes de la méthode Merise, avant de générer le Schéma Relationnel (MLD).
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-traiter);">Étape 2 — Implémentation de la BDD (MS Access)</h3>
+                <p>
+                    Une fois le modèle validé, nous avons créé les tables sous Microsoft Access en veillant à l'intégrité référentielle (clés primaires et étrangères). Nous y avons importé des jeux de données fictifs (fichiers plats) pour simuler l'inventaire de la boutique et tester nos premières requêtes SQL (calcul du CA, jeux en rupture de stock).
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter);">
+                <h3 style="color: var(--color-traiter);">Étape 3 — Développement de l'Application Gestionnaire</h3>
+                <p>
+                    Pour rendre la base exploitable par un "vrai" gérant de magasin, nous avons créé une <strong>Interface Homme-Machine (IHM)</strong> directement dans Access. Nous avons développé des formulaires de saisie assistés, des boutons de navigation (macros), et des états imprimables (factures clientes, rapports de stock). L'application finale masque totalement la complexité des tables au profit d'une ergonomie métier.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Grille d'Auto-évaluation</h2>
+            <div style="overflow-x: auto;">
+                <table class="evaluation-table">
+                    <thead>
+                        <tr>
+                            <th style="width:40%;">Apprentissage Critique</th>
+                            <th style="width:10%; text-align:center;">Insuffisant</th>
+                            <th style="width:10%; text-align:center;">Fragile</th>
+                            <th style="width:10%; text-align:center;">Bien</th>
+                            <th style="width:10%; text-align:center;">Très Bien</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AC11.01</strong> — Interpréter le besoin du commanditaire</td>
+                            <td></td><td></td><td></td>
+                            <td class="center">✓</td>
+                            <td>Traduction parfaite des règles de gestion d'une boutique physique en contraintes informatiques.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC11.02</strong> — Respecter les formalismes (MCD/MLD)</td>
+                            <td></td><td></td><td></td>
+                            <td class="center">✓</td>
+                            <td>Utilisation rigoureuse de Looping. Aucune erreur d'intégrité dans le passage au modèle logique.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC11.03</strong> — Connaître la syntaxe (SQL / Access)</td>
+                            <td></td><td></td><td></td>
+                            <td class="center">✓</td>
+                            <td>Requêtes de mise à jour, d'ajout et de suppression maîtrisées et intégrées aux formulaires.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC11.04</strong> — Maîtriser la structure des données</td>
+                            <td></td><td></td><td></td>
+                            <td class="center">✓</td>
+                            <td>Compréhension totale du schéma relationnel pour la génération des formulaires complexes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC11.06</strong> — Intérêt de la programmation (IHM)</td>
+                            <td></td><td></td><td></td>
+                            <td class="center">✓</td>
+                            <td>L'application Access développée est totalement fonctionnelle et prête à être livrée à un client final.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Analyse Réflexive</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-traiter);">Architecture et Modélisation</h3>
+                <p>
+                    Cette SAÉ, qui nous a valu une excellente note (17,75/20), m'a prouvé que le succès d'une base de données se joue avant même d'ouvrir le SGBD. Passer du temps sur Looping pour concevoir un MCD solide permet d'éviter les redondances de données et les anomalies de mise à jour. Une erreur de cardinalité au début du projet peut rendre l'application inutilisable à la fin.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-traiter);">L'expérience utilisateur (IHM)</h3>
+                <p>
+                    Le développement des formulaires sous Access m'a confronté à la réalité de l'utilisateur métier. Le gérant de la boutique ne veut pas faire de requêtes SQL ; il veut cliquer sur un bouton "Nouvelle Vente" et que le stock se décrémente automatiquement. J'ai appris à penser "processus métier" et non plus seulement "stockage de données".
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--accent-color);">
+                <h3>💡 Ce que j'ai retenu</h3>
+                <p>
+                    Créer une base de données est un exercice de traduction : il faut transformer une réalité physique (des boîtes de jeux, des clients, des fournisseurs) en architecture logique. Savoir packager cette base dans une application exploitable est la compétence clé qui donne de la valeur au travail du développeur data.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section" style="text-align: center; margin-top: 40px; padding: 2rem; background: var(--card-bg-2); border-radius: 12px; border: 1px dashed rgba(56, 189, 248, 0.4);">
+            <h3 style="color: #38bdf8; margin-bottom: 0.5rem;">⏳ Livrables en cours de préparation</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                Les fichiers liés à ce projet (rapports, scripts, jeux de données) ne sont pas encore disponibles au téléchargement. <strong>Je suis actuellement en train de les modifier afin de les rendre conformes</strong> pour une publication publique (nettoyage du code, anonymisation des données). Ils seront ajoutés très prochainement.
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../../../projets.html" class="btn-secondary">← Retour aux projets</a>
+        </div>
+
+    </main>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../../../../index.html">Accueil</a>
+        <a href="../../../about.html">Mon Parcours</a>
+        <a href="../../../competences.html">Compétences</a>
+        <a href="../../../projets.html">Projets</a>
+        <a href="../../../contact.html">Contact</a>
+    </div>
+
+    <script src="../../../../scripts/main.js"></script>
+</body>
+</html>

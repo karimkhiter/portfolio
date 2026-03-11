@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ 3.02 — Intégration Datawarehouse - Karim KHITER</title>
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../../../../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../../../../index.html">Accueil</a></li>
+                <li><a href="../../../about.html">Mon Parcours</a></li>
+                <li><a href="../../../competences.html">Compétences</a></li>
+                <li><a href="../../../projets.html" class="active">Projets</a></li>
+                <li><a href="../../../contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-detail-header bg-traiter">
+        <h1>Intégration de données dans un Datawarehouse (ETL)</h1>
+        <div class="project-meta">
+            <span>📅 Semestre 3</span>
+            <span>🎓 SAÉ 3.02</span>
+            <span>⏱️ 20h</span>
+        </div>
+        
+        <div class="project-authors">
+            <span class="author-label">Projet encadré par :</span>
+            <a href="https://www.linkedin.com/in/gelyalain/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Alain GÉLY
+            </a>
+        </div>
+
+        <div class="project-authors" style="margin-top: 1rem; padding-top: 1rem;">
+            <span class="author-label">Réalisé par :</span>
+            <a href="https://www.linkedin.com/in/karim-khiter/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Karim KHITER
+            </a>
+            <a href="https://www.linkedin.com/in/linda-ourdane-445425332/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Linda OURDANE
+            </a>
+        </div>
+    </header>
+
+    <main class="project-body">
+
+        <section class="detail-section">
+            <h2>Fiche d'Identité</h2>
+            <div class="info-grid">
+
+                <div class="info-block" style="border-left-color: var(--color-traiter);">
+                    <h3>🎯 Compétences ciblées</h3>
+                    <div class="project-tags-comp" style="margin-top: 0.5rem;">
+                        <span class="tag-comp tag-traiter">Traiter</span>
+                        <span class="tag-comp tag-valoriser">Valoriser</span>
+                    </div>
+                    <p style="margin-top: 0.8rem; font-size: 0.9rem;">
+                        Alimentation et structuration d'un entrepôt de données à des fins décisionnelles.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>🛠️ Technologies & Outils</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">Apache HOP (ETL)</span>
+                        <span class="resource-tag">XML / XPath</span>
+                        <span class="resource-tag">Base de Données Relationnelle</span>
+                        <span class="resource-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>📚 Ressources mobilisées</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">R3.02 — Systèmes d'information décisionnels</span>
+                        <span class="resource-tag">R3.04 — Prog. statistique automatisée</span>
+                        <span class="resource-tag">R3.VCOD.11 — PPP 3</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>🔑 Apprentissages Critiques</h3>
+                    <ul style="font-size: 0.85rem;">
+                        <li><strong>AC21.02 |</strong> Rôle central de l'entrepôt de données</li>
+                        <li style="margin-top:0.4rem;"><strong>AC21.03 |</strong> Résoudre les problèmes d'intégration de sources hétérogènes</li>
+                        <li style="margin-top:0.4rem;"><strong>AC21.04 |</strong> Nécessité de tester, optimiser et corriger un programme</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Contexte et Mise en Situation</h2>
+            <br>
+            
+
+            <div class="project-scenario" style="border-left-color: var(--color-traiter); margin-top: 1.5rem;">
+                <h3 style="color: var(--color-traiter);">Le Scénario</h3>
+                <p>
+                    L'approche décisionnelle moderne repose sur la centralisation d'informations hétérogènes au sein d'un <em>Datawarehouse</em> (entrepôt de données). En tant que <strong style="color: var(--text-color);">consultants décisionnels</strong>, notre mission consistait à mettre en place la chaîne d'alimentation (ETL) à partir de données publiques (Open Data) : les annonces de création et de dissolution des associations en France issues du <strong>JOAFE</strong> (Journal Officiel).
+                </p>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 0.6rem; color: var(--text-color);">Problématique</h3>
+            <p style="color: var(--text-light);">
+                Comment automatiser l'extraction d'informations massives imbriquées dans des fichiers XML complexes, les transformer, et les charger (ETL) dans une base de données relationnelle structurée prête pour l'analyse décisionnelle ?
+            </p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Démarche Technique</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-traiter);">Étape 1 — Extraction et Parsing XML (XPath)</h3>
+                <br>
+                
+                <p style="margin-top: 1rem;">
+                    Les données fournies par le JOAFE étaient au format XML, un format hiérarchique complexe. Pour cibler les données précises (titre de l'association, date de création, objet de l'association), nous avons dû maîtriser le langage de requêtes <strong>XPath</strong>. Cela a permis d'isoler les nœuds XML pertinents pour les intégrer dans notre flux de données.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-traiter);">Étape 2 — Transformation via Apache HOP (ETL)</h3>
+                <p>
+                    L'outil cœur de ce projet fut <strong>Apache HOP</strong> (un orchestrateur ETL open-source). Nous y avons construit un <em>pipeline</em> de données. L'objectif était de nettoyer les données (gestion des dates manquantes, uniformisation de la casse des textes) et d'appliquer les règles de gestion métier avant l'insertion en base.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter);">
+                <h3 style="color: var(--color-traiter);">Étape 3 — Modélisation et Chargement (Load)</h3>
+                <p>
+                    En parallèle de l'ETL, nous avons conçu un modèle de base de données relationnelle adapté pour recevoir ces données. La dernière brique d'Apache HOP consistait à faire le "mapping" entre nos flux de données transformés et les tables SQL de notre base de données cible, en gérant les clés primaires et étrangères.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Grille d'Auto-évaluation & Axes d'amélioration</h2>
+            <div style="overflow-x: auto;">
+                <table class="evaluation-table">
+                    <thead>
+                        <tr>
+                            <th style="width:35%;">Apprentissage Critique</th>
+                            <th style="width:8%; text-align:center;">Insuffisant</th>
+                            <th style="width:8%; text-align:center;">Fragile</th>
+                            <th style="width:8%; text-align:center;">Bien</th>
+                            <th style="width:8%; text-align:center;">Très Bien</th>
+                            <th>Commentaires & Rattrapage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AC21.03</strong> — Intégration de sources hétérogènes</td>
+                            <td></td><td></td>
+                            <td class="center">✓</td>
+                            <td></td>
+                            <td>Très bonne compréhension et application du langage XPath pour décrypter les fichiers XML du JOAFE.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC21.04</strong> — Tester, optimiser et corriger un programme</td>
+                            <td></td>
+                            <td class="center" style="color:#f97316;">✓</td>
+                            <td></td>
+                            <td></td>
+                            <td>Le pipeline Apache HOP fonctionnait, mais manquait d'optimisation (temps d'exécution long). Un manque de temps nous a empêché d'affiner les processus de transformation.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC23.04</strong> — Rigueur dans la production (Workflow)</td>
+                            <td></td>
+                            <td class="center" style="color:#f97316;">✓</td>
+                            <td></td>
+                            <td></td>
+                            <td>Nous n'avons pas eu le temps de configurer le workflow de mise à jour (MAJ) incrémentale. L'entrepôt n'était pas autonome en cas d'arrivée de nouveaux fichiers.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Analyse Réflexive : Gestion du temps et optimisation</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-traiter);">La complexité sous-estimée de l'extraction</h3>
+                <p>
+                    Ce projet m'a confronté à la dure loi de la gestion du temps en Data Engineering. Nous avons passé énormément de temps à décrypter la structure très particulière des fichiers XML et à perfectionner nos requêtes XPath. Cette étape était cruciale, mais elle a consommé le temps alloué à la finalisation du pipeline ETL.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-traiter);">Un ETL inachevé : la leçon du Workflow de MAJ</h3>
+                <p>
+                    Par manque de temps, notre solution finale injectait bien les données, mais ne possédait pas de <strong>workflow de mise à jour (Delta Load)</strong>. J'ai pris conscience qu'un Datawarehouse n'est utile que s'il est capable de se mettre à jour automatiquement (insérer les nouvelles associations sans écraser ni dupliquer les anciennes). Un ETL non automatisable n'est pas prêt pour la production.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--accent-color);">
+                <h3>💡 Ce que j'ai retenu</h3>
+                <p>
+                    Bien que frustrant de ne pas avoir pu livrer un produit parfait, cette SAÉ a été un excellent apprentissage. Apache HOP m'a fait comprendre la logique visuelle et séquentielle de l'intégration de données. Lors de mes futurs projets, je veillerai à concevoir l'architecture globale (extraction ET mise à jour) avant de me plonger tête baissée dans le code pur.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section" style="text-align: center; margin-top: 40px; padding: 2rem; background: var(--card-bg-2); border-radius: 12px; border: 1px dashed rgba(56, 189, 248, 0.4);">
+            <h3 style="color: #38bdf8; margin-bottom: 0.5rem;">⏳ Livrables en cours de préparation</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                Les fichiers liés à ce projet (rapports, scripts, jeux de données) ne sont pas encore disponibles au téléchargement. <strong>Je suis actuellement en train de les modifier afin de les rendre conformes</strong> pour une publication publique (nettoyage du code, anonymisation des données). Ils seront ajoutés très prochainement.
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../../../projets.html" class="btn-secondary">← Retour aux projets</a>
+        </div>
+
+    </main>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../../../../index.html">Accueil</a>
+        <a href="../../../about.html">Mon Parcours</a>
+        <a href="../../../competences.html">Compétences</a>
+        <a href="../../../projets.html">Projets</a>
+        <a href="../../../contact.html">Me contacter</a>
+    </div>
+
+    <script src="../../../../scripts/main.js"></script>
+</body>
+</html>

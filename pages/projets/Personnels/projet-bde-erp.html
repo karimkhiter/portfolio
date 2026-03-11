@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Personnel — ERP & Caisse BDE - Karim KHITER</title>
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../../../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Accueil</a></li>
+                <li><a href="../../about.html">Mon Parcours</a></li>
+                <li><a href="../../competences.html">Compétences</a></li>
+                <li><a href="../../projets.html" class="active">Projets</a></li>
+                <li><a href="../../contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-detail-header bg-developper">
+        <h1>Développement d'un ERP sur-mesure : Caisse & Stock (BDE L'ESTIDIANTINE)</h1>
+        <div class="project-meta">
+            <span>📅 Février — Mars 2026</span>
+            <span>💡 Projet Personnel / Associatif</span>
+            <span>⏱️ PHP 8, JS Vanilla, MySQL</span>
+        </div>
+
+        <div class="project-authors" style="margin-top: 1rem; padding-top: 1rem;">
+            <span class="author-label">Développeur Full-Stack & Chef de Projet :</span>
+            <a href="https://www.linkedin.com/in/karim-khiter/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Karim KHITER
+            </a>
+        </div>
+    </header>
+
+    <main class="project-body">
+
+        <section class="detail-section">
+            <h2>Fiche d'Identité du Projet</h2>
+            <div class="info-grid">
+
+                <div class="info-block" style="border-left-color: var(--color-developper);">
+                    <h3>🎯 Compétence ciblée</h3>
+                    <div class="project-tags-comp" style="margin-top: 0.5rem;">
+                        <span class="tag-comp tag-developper">Développer</span>
+                        <span class="tag-comp tag-traiter">Traiter (BDD)</span>
+                        <span class="tag-comp tag-valoriser">Valoriser (UI)</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>🛠️ Technologies & Outils</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">PHP 8 (PDO / Back-end)</span>
+                        <span class="resource-tag">MySQL (Modélisation)</span>
+                        <span class="resource-tag">JavaScript ES6 (Fetch API)</span>
+                        <span class="resource-tag">CSS3 (Mobile-first)</span>
+                        <span class="resource-tag">Serveur Alwaysdata</span>
+                    </div>
+                </div>
+
+                <div class="info-block" style="border-left-color: var(--text-muted);">
+                    <h3>🔑 Fonctionnalités Principales</h3>
+                    <ul style="font-size: 0.85rem;">
+                        <li><strong>Caisse connectée :</strong> Panier asynchrone avec moteur de réductions.</li>
+                        <li style="margin-top:0.4rem;"><strong>Gestion des stocks :</strong> Traitement FIFO des lots et alertes de péremption (DLUO).</li>
+                        <li style="margin-top:0.4rem;"><strong>Système d'Ardoises :</strong> Suivi des dettes avec bouton de régularisation.</li>
+                        <li style="margin-top:0.4rem;"><strong>Comptabilité :</strong> Export CSV et gestion de la monnaie/pourboires.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Contexte et Mise en Situation</h2>
+            <div class="project-scenario" style="border-left-color: var(--color-developper);">
+                <h3 style="color: var(--color-developper);">Digitaliser un commerce étudiant de A à Z</h3>
+                <p>
+                    Le Bureau des Étudiants du département <em>Science des Données</em> (IUT de Metz) gérait la vente de snacks et de boissons de manière archaïque : cahiers de brouillon, fichiers Excel instables, et calculs mentaux propices aux erreurs. Les pertes financières dues aux "ardoises" (dettes étudiantes non remboursées) et aux produits périmés devenaient problématiques.
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>Ma mission (en tant que Président et développeur) :</strong> Concevoir, développer et déployer un système d'information complet, sécurisé et multi-supports (utilisable aussi bien sur le PC du local que sur le smartphone personnel des membres du bureau lors d'événements extérieurs).
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Modélisation & Architecture de la Base de Données</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-light);">
+                La pierre angulaire d'un ERP réside dans la solidité de son modèle relationnel. Pour répondre aux besoins de traçabilité, j'ai conçu un schéma SQL normalisé.
+            </p>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-traiter);">Séparer les "Produits" des "Lots"</h3>
+                <p style="margin-bottom: 1rem;">
+                    L'une des erreurs courantes est d'associer la quantité directement au produit. Dans mon modèle, la table <code>produits</code> contient les méta-données (nom, prix, type). Le stock physique, lui, est géré dans une table enfant <code>lots</code>. Cela permet d'avoir plusieurs dates de péremption pour un même article.
+                </p>
+                <p><strong>Impact métier :</strong> Lorsqu'un Kinder Bueno est vendu, le backend interroge la table <code>lots</code> et décrémente automatiquement le lot dont la DLUO (Date Limite) est la plus proche, respectant ainsi le standard industriel <strong>FIFO (First In, First Out)</strong>.</p>
+            </div>
+            
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-traiter);">Traçabilité Financière : Prix vs Paiement</h3>
+                <p>
+                    Pour gérer intelligemment la comptabilité étudiante, j'ai implémenté les colonnes <code>prix_final</code> (la valeur théorique du panier), <code>montant_paye</code> (ce que l'étudiant a réellement donné en cas de pourboire) et un booléen <code>est_paye</code> (pour la gestion des ardoises/dettes).
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Plongée dans le Code : Les Défis Techniques</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-developper); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-developper);">1. Le Moteur de Formules & Réductions (JavaScript)</h3>
+                <p style="margin-bottom: 1rem;">
+                    La difficulté côté client était de calculer le total du panier de manière dynamique sans surcharger le serveur. Un étudiant pouvait être éligible à plusieurs formules (ex: <em>2 snacks + 1 boisson = -0.15€</em>). L'algorithme développé trie d'abord les formules par rentabilité, puis les applique en boucle tant que les articles requis sont présents dans le panier.
+                </p>
+                <p style="font-size:0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Extrait de <code>caisse.js</code> — Application des formules en cascade :</p>
+                <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#6a9955;">// TRI CRITIQUE : On trie les formules par montant de réduction décroissant</span><br>
+<span style="color:#c586c0;">if</span>(Array.isArray(formulesGlobal)) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;formulesGlobal.sort((a, b) => parseFloat(b.montant_reduction) - parseFloat(a.montant_reduction));<br>
+}<br><br>
+<span style="color:#6a9955;">// Application récursive</span><br>
+formulesGlobal.forEach(formule => {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#569cd6;">const</span> reqSnack = parseInt(formule.nb_snacks_requis || <span style="color:#b5cea8;">0</span>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#569cd6;">const</span> reqBoisson = parseInt(formule.nb_boissons_requis || <span style="color:#b5cea8;">0</span>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c586c0;">if</span> (reqSnack === <span style="color:#b5cea8;">0</span> && reqBoisson === <span style="color:#b5cea8;">0</span>) <span style="color:#c586c0;">return</span>;<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">// Tant qu'on a assez d'articles pour déclencher la plus grosse formule</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c586c0;">while</span> (snacksDispo >= reqSnack && boissonsDispo >= reqBoisson) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;totalReductionFormules += parseFloat(formule.montant_reduction);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;snacksDispo -= reqSnack;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boissonsDispo -= reqBoisson;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+});
+                </div>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-developper); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-developper);">2. Transactions ACID (PHP / SQL)</h3>
+                <p style="margin-bottom: 1rem;">
+                    Lorsqu'une commande est validée, le back-end doit effectuer plusieurs requêtes (création commande, lignes d'achats, décrémentation des lots, usage d'un code promo). Si l'une des requêtes échoue (ex: panne réseau), la base de données risque d'être corrompue. Pour éviter cela, j'ai utilisé les <strong>Transactions PDO</strong> (<code>beginTransaction</code>, <code>commit</code>, <code>rollBack</code>).
+                </p>
+                <p style="font-size:0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Extrait de <code>api/save_order.php</code> — Intégrité des données :</p>
+                <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#c586c0;">try</span> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">$pdo</span>->beginTransaction(); <span style="color:#6a9955;">// Début de la zone sécurisée</span><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">// 1. Insertion Commande</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">$stmt</span> = <span style="color:#9cdcfe;">$pdo</span>->prepare(<span style="color:#ce9178;">"INSERT INTO commandes (moyen_paiement, prix_final, ...) VALUES (?, ?)"</span>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">$stmt</span>->execute([<span style="color:#9cdcfe;">$input</span>[<span style="color:#ce9178;">'paiement'</span>], <span style="color:#9cdcfe;">$input</span>[<span style="color:#ce9178;">'total'</span>]]);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">$commandeId</span> = <span style="color:#9cdcfe;">$pdo</span>->lastInsertId();<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">// 2. Gestion Stock & Lignes (Boucle sur le panier)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">// [...] Logique FIFO de suppression de lots</span><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">$pdo</span>->commit(); <span style="color:#6a9955;">// Validation définitive</span><br>
+} <span style="color:#c586c0;">catch</span> (Exception <span style="color:#9cdcfe;">$e</span>) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">$pdo</span>->rollBack(); <span style="color:#6a9955;">// Annulation totale en cas d'erreur</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c586c0;">echo</span> json_encode([<span style="color:#ce9178;">'success'</span> => <span style="color:#569cd6;">false</span>, <span style="color:#ce9178;">'error'</span> => <span style="color:#9cdcfe;">$e</span>->getMessage()]);<br>
+}
+                </div>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-developper); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-developper);">3. Le Système Actif d'Ardoises (Dettes)</h3>
+                <p>
+                    Fonctionnalité critique demandée par le BDE : autoriser un étudiant à prendre un snack et payer plus tard. Le système isole ces commandes via <code>est_paye = 0</code>. L'interface affiche un encart dynamique rouge en haut de l'historique regroupant les dettes par étudiant, avec un bouton permettant, via une requête AJAX, de solder toutes ses commandes d'un seul clic.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="detail-section">
+            <h2>Expérience Utilisateur (UX) & Responsive Mobile-First</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-valoriser); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-valoriser);">Transformation des Tableaux en "Cards" (CSS)</h3>
+                <p style="margin-bottom: 1rem;">
+                    Sur un écran d'ordinateur, l'administration s'affiche sous forme de tableaux (HTML <code>&lt;table&gt;</code>). Sur smartphone, pour éviter les débordements horizontaux hideux, j'ai développé un CSS spécifique utilisant les attributs <code>data-label</code>. Ce script CSS "détruit" la structure rigide du tableau pour transformer chaque ligne en une véritable <strong>carte d'information</strong> (Flexbox en colonne), offrant une ergonomie d'application native.
+                </p>
+                <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#c586c0;">@media</span> <span style="color:#569cd6;">screen</span> <span style="color:#c586c0;">and</span> (<span style="color:#9cdcfe;">max-width</span>: <span style="color:#b5cea8;">900px</span>) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">/* Les cases du tableau deviennent des colonnes Flex */</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#d7ba7d;">.admin-table td</span> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">display</span>: flex <span style="color:#569cd6;">!important</span>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">flex-direction</span>: column <span style="color:#569cd6;">!important</span>; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">/* Génération du titre de la donnée dynamiquement via CSS */</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#d7ba7d;">.admin-table td::before</span> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">content</span>: <span style="color:#dcdcaa;">attr</span>(data-label) <span style="color:#569cd6;">!important</span>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">font-weight</span>: <span style="color:#b5cea8;">800</span> <span style="color:#569cd6;">!important</span>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">color</span>: <span style="color:#569cd6;">var</span>(--primary) <span style="color:#569cd6;">!important</span>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">text-transform</span>: uppercase <span style="color:#569cd6;">!important</span>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+                </div>
+            </div>
+            
+            <p style="color: var(--text-light); font-size: 0.95rem;">
+                Le système intègre également des <strong>feedbacks visuels asynchrones</strong> : les produits en rupture se grisent automatiquement, les badges de notification du panier sur mobile s'animent via CSS keyframes lors de l'ajout d'un article, et la barre de navigation glisse horizontalement pour faciliter l'accès au pouce.
+            </p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Bilan et Analyse Réflexive</h2>
+
+            <div class="info-block" style="border-left-color: var(--accent-color);">
+                <h3>💡 Ce que j'ai retenu et accompli</h3>
+                <p>
+                    Ce projet personnel m'a placé dans les conditions réelles d'une entreprise : <strong>recueil du besoin métier complexe, proposition d'une architecture robuste, développement Full-Stack autonome, et mise en production.</strong>
+                </p>
+                <p style="margin-top: 1rem;">
+                    J'ai particulièrement apprécié l'optimisation des performances en remplaçant les chargements de pages PHP classiques par une architecture asynchrone (API REST / <code>fetch()</code> JS). Cela a rendu l'expérience utilisateur immédiate, sans aucun temps de latence au moment de la vente. Enfin, concevoir la protection contre les failles courantes (Injections SQL via requêtes préparées, vérification de session stricte) m'a permis d'asseoir mes compétences en sécurité Web.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section" style="text-align: center; margin-top: 40px; padding: 2rem; background: var(--card-bg-2); border-radius: 12px; border: 1px dashed rgba(239, 68, 68, 0.4);">
+            <h3 style="color: #f87171; margin-bottom: 0.5rem;">🔒 Confidentialité du projet</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                S'agissant du système d'encaissement et de gestion réel de l'association, <strong>le code source complet, les maquettes et le schéma de la base de données sont strictement confidentiels</strong> pour des raisons évidentes de sécurité. Les mécanismes d'architecture sont expliqués ci-dessus à titre exclusif de démonstration technique.
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../../projets.html" class="btn-secondary">← Retour aux projets</a>
+        </div>
+
+    </main>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../../../index.html">Accueil</a>
+        <a href="../../about.html">Mon Parcours</a>
+        <a href="../../competences.html">Compétences</a>
+        <a href="../../projets.html">Projets</a>
+        <a href="../../contact.html">Contact</a>
+    </div>
+
+    <script src="../../../scripts/main.js"></script>
+</body>
+</html>

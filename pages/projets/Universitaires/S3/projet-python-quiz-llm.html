@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Suivi — Quiz Interactif & LLM - Karim KHITER</title>
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../../../../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../../../../index.html">Accueil</a></li>
+                <li><a href="../../../about.html">Mon Parcours</a></li>
+                <li><a href="../../../competences.html">Compétences</a></li>
+                <li><a href="../../../projets.html" class="active">Projets</a></li>
+                <li><a href="../../../contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-detail-header bg-developper">
+        <h1>Création d'un Quiz Interactif avec Évaluation par IA (LLM)</h1>
+        <div class="project-meta">
+            <span>📅 Octobre 2025 — 3 mois</span>
+            <span>💡 Projet Suivi</span>
+            <span>⏱️ Python, Dash & IA</span>
+        </div>
+
+        <div class="project-authors">
+            <span class="author-label">Projet encadré par :</span>
+            <a href="https://www.linkedin.com/in/brieuc-conan-guez-11691115/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                Brieuc CONAN-GUEZ
+            </a>
+        </div>
+
+        <div class="project-authors" style="margin-top: 1rem; padding-top: 1rem;">
+            <span class="author-label">Réalisé par :</span>
+            <a href="https://www.linkedin.com/in/karim-khiter/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Karim KHITER
+            </a>
+            <a href="https://www.linkedin.com/in/faiza-ben-mansour-0022a8332/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Faïza BENMANSOUR
+            </a>
+            <a href="https://www.linkedin.com/in/dylan-borckholz-1552b1332/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Dylan BORCKHOLZ
+            </a>
+        </div>
+    </header>
+
+    <main class="project-body">
+
+        <section class="detail-section">
+            <h2>Fiche d'Identité</h2>
+            <div class="info-grid">
+
+                <div class="info-block" style="border-left-color: var(--color-developper);">
+                    <h3>🎯 Compétences ciblées</h3>
+                    <div class="project-tags-comp" style="margin-top: 0.5rem;">
+                        <span class="tag-comp tag-traiter">Traiter</span>
+                        <span class="tag-comp tag-developper">Développer</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>🛠️ Technologies & Outils</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">Python (Dash, Pandas)</span>
+                        <span class="resource-tag">LLM (HuggingFace)</span>
+                        <span class="resource-tag">Fichiers YAML</span>
+                        <span class="resource-tag">Batch (.bat)</span>
+                    </div>
+                </div>
+
+                <div class="info-block" style="border-left-color: var(--text-muted);">
+                    <h3>🔑 Objectifs Clés</h3>
+                    <ul style="font-size: 0.85rem;">
+                        <li>Concevoir une <strong>architecture scalable</strong> séparant la logique métier du contenu brut.</li>
+                        <li style="margin-top:0.4rem;">Gérer les états d'une <strong>application web interactive</strong> (Single Page App).</li>
+                        <li style="margin-top:0.4rem;">Intégrer et brider une <strong>IA générative</strong> pour la correction automatisée via Prompt Engineering.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Contexte et Mise en Situation</h2>
+            <div class="project-scenario" style="border-left-color: var(--color-developper);">
+                <h3 style="color: var(--color-developper);">Le Scénario</h3>
+                <p>
+                    L'évaluation des connaissances est souvent cantonnée à des QCM binaires car la correction des questions ouvertes demande un temps humain trop important. L'objectif de ce projet suivi était de concevoir de A à Z <strong>une application Web d'évaluation interactive</strong>. L'innovation majeure : l'intégration d'un Modèle de Langage (LLM) capable de lire la réponse textuelle de l'étudiant, d'en évaluer la justesse technique, et de lui attribuer une note justifiée en temps réel.
+                </p>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 0.6rem; color: var(--text-color);">Problématique</h3>
+            <p style="color: var(--text-light);">
+                Comment développer une application d'évaluation qui soit à la fois "Scalable" (personnalisable par un non-développeur), dynamique (interface web), et algorithmiquement intelligente (intégration d'IA pour la correction) ?
+            </p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Plongée dans le Code : Démarche Technique</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-light);">Pour répondre à cette problématique complexe, nous avons architecturé l'application en séparant strictement la donnée, l'interface et l'intelligence artificielle.</p>
+
+            <div class="info-block" style="border-left-color: var(--color-developper); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-developper);">1. Scalabilité des Données (Le Parseur YAML)</h3>
+                <p style="margin-bottom: 1rem;">
+                    Pour rendre l'application utilisable par n'importe quel professeur, il était hors de question de coder les questions en "dur" dans le fichier Python. Nous avons opté pour une configuration via un fichier <code>.yaml</code>. Le script Python charge dynamiquement ce fichier au démarrage. Le professeur peut y définir le "Prompt Global" (le comportement de l'IA) et les questions ouvertes ou fermées.
+                </p>
+                <p style="font-size:0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Extrait de <code>exemple_quiz.yaml</code> — Le Prompting de l'IA :</p>
+                <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#569cd6;">quiz:</span><br>
+&nbsp;&nbsp;<span style="color:#9cdcfe;">titre:</span> <span style="color:#ce9178;">"Quiz BUT Science des Données 1A"</span><br>
+&nbsp;&nbsp;<span style="color:#9cdcfe;">prompt_global:</span> <span style="color:#ce9178;">|</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">Tu es un professeur expert en BUT Science des Données.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">Tu dois évaluer la réponse d'un étudiant à une question donnée.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">Format de réponse OBLIGATOIRE :</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">Rédige d'abord un commentaire constructif.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;">Sur la toute dernière ligne, indique la note finale ainsi :</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ce9178;">score = X</span><br>
+&nbsp;&nbsp;<span style="color:#9cdcfe;">questions:</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#569cd6;">- type:</span> <span style="color:#ce9178;">"question_ouverte"</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#9cdcfe;">question:</span> <span style="color:#ce9178;">"Expliquez la différence entre une liste et un dictionnaire en Python."</span>
+                </div>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-analyser);">2. Intégration du LLM (Le Hack OpenAI / HuggingFace)</h3>
+                <p style="margin-bottom: 1rem;">
+                    Pour évaluer la <code>question_ouverte</code>, nous avons connecté notre application à un modèle hébergé sur HuggingFace. L'astuce d'ingénierie a consisté à utiliser la bibliothèque standard <code>openai</code> de Python, mais en redirigeant sa <code>base_url</code> vers le routeur HuggingFace. Cela permet d'utiliser n'importe quel modèle open-source robuste tout en gardant une syntaxe d'API standard et très documentée.
+                </p>
+                <p style="font-size:0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Extrait de <code>app.py</code> — Redirection d'API :</p>
+                <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#c586c0;">import</span> openai <span style="color:#c586c0;">from</span> OpenAI<br>
+<span style="color:#c586c0;">import</span> re <span style="color:#6a9955;"># Expressions régulières pour extraire la note</span><br><br>
+<span style="color:#6a9955;"># --- CONFIGURATION API HUGGING FACE ---</span><br>
+API_KEY = <span style="color:#ce9178;">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><br><br>
+client = OpenAI(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;"># Redirection de la requête de base vers les serveurs HF</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;base_url=<span style="color:#ce9178;">"https://router.huggingface.co/v1"</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;api_key=API_KEY<br>
+)
+                </div>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-traiter);">3. Moteur Interactif et State Management (Dash)</h3>
+                <p style="margin-bottom: 1rem;">
+                    L'interface utilisateur (Frontend) et le Backend ont été développés en pur Python grâce au framework <strong>Dash</strong> et <em>Dash Bootstrap Components</em>. Le véritable défi technique ici était le "State Management" : suivre l'avancée de l'étudiant, sauvegarder ses réponses temporaires, et mettre à jour le DOM sans jamais recharger la page. Nous avons utilisé les <code>@app.callback</code> avec du <em>Pattern Matching</em> pour gérer dynamiquement des boutons générés à la volée.
+                </p>
+                <p style="font-size:0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Extrait de <code>app.py</code> — Le Callback de Navigation :</p>
+                <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#dcdcaa;">@app.callback</span>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output(<span style="color:#ce9178;">"quiz-content"</span>, <span style="color:#ce9178;">"children"</span>),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input({<span style="color:#ce9178;">"type"</span>: <span style="color:#ce9178;">"nav-btn"</span>, <span style="color:#ce9178;">"action"</span>: ALL}, <span style="color:#ce9178;">"n_clicks"</span>), <span style="color:#6a9955;"># Pattern Matching</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;State(<span style="color:#ce9178;">"store-app-state"</span>, <span style="color:#ce9178;">"data"</span>),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;State({<span style="color:#ce9178;">"type"</span>: <span style="color:#ce9178;">"answer-input"</span>, <span style="color:#ce9178;">"index"</span>: ALL}, <span style="color:#ce9178;">"value"</span>),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prevent_initial_call=<span style="color:#569cd6;">True</span><br>
+)<br>
+<span style="color:#569cd6;">def</span> <span style="color:#dcdcaa;">navigate_quiz</span>(n_clicks_list, state, current_answer_val):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;"># Sauvegarde temporaire de la réponse avant changement de page</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c586c0;">if</span> current_answer_val:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;state[<span style="color:#ce9178;">"answers"</span>][str(current_q_idx)] = current_answer_val[<span style="color:#b5cea8;">0</span>]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#6a9955;"># Génération de la nouvelle page (IHM)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c586c0;">return</span> build_quiz_interface(new_idx, ...), {**state, <span style="color:#ce9178;">"q_idx"</span>: new_idx}
+                </div>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--text-muted);">
+                <h3 style="color: var(--text-muted);">4. Déploiement "Zéro Configuration"</h3>
+                <p style="margin-bottom: 1rem;">
+                    Un bon code ne sert à rien s'il est impossible à lancer par l'utilisateur final. Pour rendre notre projet totalement "Plug & Play", nous avons rédigé le fichier <code>requirements.txt</code> contenant les librairies (<em>dash, pyyaml, openai, pandas, plotly</em>), couplé à un script batch (<code>.bat</code>) Windows. L'utilisateur n'a qu'à double-cliquer pour que l'environnement s'installe tout seul.
+                </p>
+                <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#6a9955;">@echo off</span><br>
+<span style="color:#569cd6;">echo</span> Installation des dependances Python<br>
+<span style="color:#569cd6;">python</span> -m pip install --upgrade pip<br>
+<span style="color:#569cd6;">python</span> -m pip install -r requirements.txt<br>
+<span style="color:#569cd6;">echo</span> ✅ Installation terminee<br>
+<span style="color:#569cd6;">pause</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="detail-section">
+            <h2>Bilan et Analyse Réflexive</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-developper); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-developper);">Dompter une IA générative</h3>
+                <p>
+                    La véritable difficulté de ce projet ne fut pas le Python, mais le "Prompt Engineering". Une IA générative par nature a tendance à "bavarder". Il fallait la forcer à toujours répondre avec un format syntaxique très strict pour que l'expression régulière (Regex) de mon script Python puisse extraire le "score = X" à la fin de sa réponse. J'ai appris qu'une IA intégrée dans un pipeline logiciel doit être fortement bridée.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--accent-color);">
+                <h3>💡 Ce que j'ai retenu</h3>
+                <p>
+                    Créer un script qui fonctionne sur ma machine est une chose, <strong>développer un outil robuste et distribuable</strong> en est une autre. Ce projet a été extrêmement complet : architecture de données (YAML), développement full-stack (Dash), et déploiement automatisé (.bat). Il m'a prouvé que j'étais capable d'aller au bout d'un cycle de développement logiciel en intégrant des technologies de pointe (LLM).
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section" style="text-align: center; margin-top: 40px; padding: 2rem; background: var(--card-bg-2); border-radius: 12px; border: 1px dashed rgba(56, 189, 248, 0.4);">
+            <h3 style="color: #38bdf8; margin-bottom: 0.5rem;">⏳ Livrables en cours de préparation</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                Les fichiers liés à ce projet (rapports, scripts, jeux de données) ne sont pas encore disponibles au téléchargement. <strong>Je suis actuellement en train de les modifier afin de les rendre conformes</strong> pour une publication publique (nettoyage du code, anonymisation des données). Ils seront ajoutés très prochainement.
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../../../projets.html" class="btn-secondary">← Retour aux projets</a>
+        </div>
+
+    </main>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../../../../index.html">Accueil</a>
+        <a href="../../../about.html">Mon Parcours</a>
+        <a href="../../../competences.html">Compétences</a>
+        <a href="../../../projets.html">Projets</a>
+        <a href="../../../contact.html">Contact</a>
+    </div>
+
+    <script src="../../../../scripts/main.js"></script>
+</body>
+</html>

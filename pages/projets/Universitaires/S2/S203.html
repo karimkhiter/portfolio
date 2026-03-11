@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ 2.03 — Régression sur Données Réelles - Karim KHITER</title>
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../../../../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../../../../index.html">Accueil</a></li>
+                <li><a href="../../../about.html">Mon Parcours</a></li>
+                <li><a href="../../../competences.html">Compétences</a></li>
+                <li><a href="../../../projets.html" class="active">Projets</a></li>
+                <li><a href="../../../contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-detail-header bg-analyser">
+        <h1>Régression sur Données Réelles — Capacités Automobiles</h1>
+        <div class="project-meta">
+            <span>📅 Semestre 2</span>
+            <span>🎓 SAÉ 2.03</span>
+            <span>⏱️ 10h</span>
+        </div>
+
+        <div class="project-authors">
+            <span class="author-label">Projet encadré par :</span>
+            <a href="https://annuaire-web.univ-lorraine.fr/p/beatrice.chevaillier" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                Béatrice CHEVAILLIER
+            </a>
+        </div>
+
+        <div class="project-authors" style="margin-top: 1rem; padding-top: 1rem;">
+            <span class="author-label">Réalisé par :</span>
+            <a href="https://www.linkedin.com/in/karim-khiter/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Karim KHITER
+            </a>
+        </div>
+    </header>
+
+    <main class="project-body">
+
+        <section class="detail-section">
+            <h2>Fiche d'Identité</h2>
+            <div class="info-grid">
+
+                <div class="info-block" style="border-left-color: var(--color-analyser);">
+                    <h3>🎯 Compétence ciblée</h3>
+                    <p>
+                        <span class="tag-comp tag-analyser" style="font-size:0.9rem;">Analyser</span>
+                        &nbsp;Analyser statistiquement les données
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>🛠️ Technologies & Outils</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">R / RStudio</span>
+                        <span class="resource-tag">Régression Linéaire</span>
+                        <span class="resource-tag">Data Visualisation</span>
+                        <span class="resource-tag">Modélisation Statistique</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>📚 Ressources mobilisées</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">R2.04 — Programmation statistique</span>
+                        <span class="resource-tag">R2.05 — Statistique descriptive 2</span>
+                        <span class="resource-tag">R2.12 — PPP 2</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>🔑 Apprentissages Critiques</h3>
+                    <ul style="font-size: 0.85rem;">
+                        <li><strong>AC12.03 |</strong> Décrire une variable statistique (synthèses/graphiques)</li>
+                        <li style="margin-top:0.4rem;"><strong>AC12.04 |</strong> Mettre en évidence des liaisons entre variables</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Contexte et Mise en Situation</h2>
+            <div class="project-scenario" style="border-left-color: var(--color-analyser);">
+                <h3 style="color: var(--color-analyser);">Le Scénario</h3>
+                <p>
+                    L'objectif de cette étude était d'explorer et de modéliser les relations entre différentes caractéristiques techniques de véhicules (poids, puissance, cylindrée) et leurs capacités réelles (vitesse max, consommation, accélération). En tant que <strong style="color: var(--text-color);">chargé d'étude statistique</strong>, j'ai dû utiliser le langage R pour nettoyer ce jeu de données, visualiser les corrélations, et construire un modèle de régression linéaire capable de prédire une variable en fonction des autres.
+                </p>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 0.6rem; color: var(--text-color);">Problématique</h3>
+            <p style="color: var(--text-light);">
+                Comment identifier mathématiquement et visuellement la liaison entre deux variables quantitatives, ajuster un modèle de régression linéaire pertinent, et en comprendre les limites prédictives face à des données réelles imparfaites ?
+            </p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Démarche Technique</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-analyser);">Étape 1 — Exploration et nuages de points</h3>
+                <p>
+                    La première étape a consisté à générer des matrices de corrélation et des nuages de points (scatter plots) sous RStudio pour identifier visuellement quelles paires de variables présentaient une tendance linéaire (ex: Poids vs Consommation).
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-analyser);">Étape 2 — Modélisation de la Régression</h3>
+                <p style="margin-bottom: 0.8rem;">
+                    Une fois le couple de variables choisi, j'ai utilisé la fonction <code>lm()</code> de R pour calculer la droite de régression linéaire (méthode des moindres carrés). L'objectif était d'obtenir l'équation de la droite permettant d'expliquer la variable Y en fonction de la variable X.
+                </p>
+                <div style="margin-top: 1.2rem;">
+                    <p style="font-size:0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Syntaxe R pour la régression :</p>
+                    <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#6a9955;"># Ajustement du modèle linéaire</span><br>
+<span style="color:#dcdcaa;">modele</span> &lt;- lm(Consommation ~ Poids, data=voitures)<br>
+<span style="color:#dcdcaa;">summary</span>(modele) <span style="color:#6a9955;"># Extraction du R² et des p-values</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser);">
+                <h3 style="color: var(--color-analyser);">Étape 3 — Prédiction et analyse des résidus</h3>
+                <p>
+                    La dernière phase consistait à utiliser ce modèle pour prédire la consommation d'un nouveau véhicule en fonction de son poids, et surtout, à analyser les résidus (la différence entre les valeurs prédites et les valeurs réelles) pour valider la robustesse de l'ajustement.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Grille d'Auto-évaluation & Axes d'amélioration</h2>
+            <div style="overflow-x: auto;">
+                <table class="evaluation-table">
+                    <thead>
+                        <tr>
+                            <th style="width:35%;">Apprentissage Critique</th>
+                            <th style="width:8%; text-align:center;">Insuffisant</th>
+                            <th style="width:8%; text-align:center;">Fragile</th>
+                            <th style="width:8%; text-align:center;">Bien</th>
+                            <th style="width:8%; text-align:center;">Très Bien</th>
+                            <th>Commentaires & Rattrapage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AC12.03</strong> — Décrire une variable (synthèses/graphiques)</td>
+                            <td></td>
+                            <td class="center" style="color:#f97316;">✓</td>
+                            <td></td>
+                            <td></td>
+                            <td>J'ai rencontré des difficultés dans le choix initial des représentations graphiques, ce qui m'a empêché de bien cerner le profil de mes variables isolées avant de les croiser. Je dois systématiser l'usage d'histogrammes et de boxplots en amont.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC12.04</strong> — Mettre en évidence des liaisons entre variables</td>
+                            <td class="center" style="color:#ef4444;">✓</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Mon choix de variables explicatives n'était pas pertinent. J'ai mal géré les valeurs aberrantes (outliers) du jeu de données, ce qui a causé un effet de levier faussant totalement l'équation de ma droite de régression. Je dois apprendre à mieux nettoyer mes données avant d'ajuster un modèle.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Analyse Réflexive : Apprendre de ses erreurs</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-traiter); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-traiter);">Le piège des valeurs aberrantes</h3>
+                <p>
+                    Cette SAÉ a été complexe pour moi et m'a confronté à la dure réalité de l'analyse de données : un modèle mathématique applique aveuglément ce qu'on lui donne. En omettant de traiter certains véhicules aux caractéristiques extrêmes (outliers) dans mon jeu de données, ma droite de régression a été "tirée" par ces valeurs, rendant mes prédictions obsolètes pour la majorité du parc automobile. C'est une erreur de préparation que je ne referai plus.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-analyser);">Le coefficient de détermination ($R^2$)</h3>
+                <p>
+                    Lors de l'analyse de mes résultats, j'ai surinterprété un coefficient de corrélation moyen en pensant que le modèle était valide. J'ai depuis compris (lors de la correction) qu'un bon $R^2$ ne suffit pas : il est impératif d'analyser la répartition des résidus. S'ils ne sont pas distribués aléatoirement, cela signifie que le modèle linéaire n'est pas le bon choix (une régression polynomiale aurait peut-être été plus adaptée).
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--accent-color);">
+                <h3>💡 Ce que j'ai retenu</h3>
+                <p>
+                    Un échec technique est souvent plus formateur qu'une réussite facile. J'ai pris conscience que la statistique inférentielle demande une grande rigueur dans l'hypothèse de départ. On ne peut pas "forcer" une droite de régression entre deux variables si la liaison n'est pas intrinsèquement linéaire. Cette expérience m'a poussé à revoir mes bases théoriques sur la méthode des moindres carrés.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section" style="text-align: center; margin-top: 40px; padding: 2rem; background: var(--card-bg-2); border-radius: 12px; border: 1px dashed rgba(56, 189, 248, 0.4);">
+            <h3 style="color: #38bdf8; margin-bottom: 0.5rem;">⏳ Livrables en cours de préparation</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                Les fichiers liés à ce projet (rapports, scripts, jeux de données) ne sont pas encore disponibles au téléchargement. <strong>Je suis actuellement en train de les modifier afin de les rendre conformes</strong> pour une publication publique (nettoyage du code, anonymisation des données). Ils seront ajoutés très prochainement.
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../../../projets.html" class="btn-secondary">← Retour aux projets</a>
+        </div>
+
+    </main>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../../../../index.html">Accueil</a>
+        <a href="../../../about.html">Mon Parcours</a>
+        <a href="../../../competences.html">Compétences</a>
+        <a href="../../../projets.html">Projets</a>
+        <a href="../../../contact.html">Contact</a>
+    </div>
+
+    <script src="../../../../scripts/main.js"></script>
+</body>
+</html>

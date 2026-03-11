@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Karim KHITER</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">Mon Parcours</a></li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Compétences Techniques</h1>
+        <p>À travers le parcours VCOD, je développe les compétences nécessaires pour comprendre la chaîne décisionnelle, de la donnée brute à l'outil d'aide à la décision.</p>
+    </header>
+
+    <div class="vcod-banner">
+        <div class="vcod-card">
+            <div class="vcod-icon">🎯</div>
+            <div class="vcod-text">
+                <h3>Mon parcours</h3>
+                <h2>VCOD — Visualisation & Conception d'Outils Décisionnels</h2>
+                <p>
+                    Ce parcours étudiant me forme à appréhender de bout en bout la <strong>chaîne de la donnée</strong>. 
+                    De la création de pipelines <strong>ETL</strong> à la livraison de <strong>tableaux de bord interactifs</strong>, 
+                    j'apprends à automatiser le reporting et à modéliser la donnée pour la rendre exploitable.
+                </p>
+                <div class="vcod-jobs" style="margin-top: 1.2rem;">
+                    <span class="vcod-job">Futur Data Analyst</span>
+                    <span class="vcod-job">Futur Développeur BI</span>
+                    <span class="vcod-job">Étudiant en Data</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="competences-grid">
+        
+        <article class="comp-card border-traiter">
+            <div class="card-content">
+                <div class="icon-box" style="color: var(--color-traiter)">🗄️</div>
+                <h3>TRAITER</h3>
+                <span class="comp-subtitle">Structuration et préparation</span>
+                <p>J'apprends à <strong>collecter, nettoyer et structurer</strong> les données brutes afin de les rendre fiables et exploitables via des pipelines <strong>ETL, SQL et Python</strong>.</p>
+                <a href="competences/c1-traiter.html" class="btn-detail">Explorer mes travaux →</a>
+            </div>
+        </article>
+
+        <article class="comp-card border-analyser">
+            <div class="card-content">
+                <div class="icon-box" style="color: var(--color-analyser)">📊</div>
+                <h3>ANALYSER</h3>
+                <span class="comp-subtitle">Statistiques et modélisation</span>
+                <p>Je m'exerce aux analyses <strong>statistiques descriptives et inférentielles</strong> pour comprendre les données et en extraire des tendances au cours de mes projets.</p>
+                <a href="competences/c2-analyser.html" class="btn-detail">Explorer mes travaux →</a>
+            </div>
+        </article>
+
+        <article class="comp-card border-valoriser">
+            <div class="card-content">
+                <div class="icon-box" style="color: var(--color-valoriser)">📈</div>
+                <h3>VALORISER</h3>
+                <span class="comp-subtitle">Dataviz et aide à la décision</span>
+                <p>Je m'initie à la conception de <strong>tableaux de bord interactifs</strong> et de reportings (Power BI) pour apprendre à transformer les résultats en outils de pilotage.</p>
+                <a href="competences/c3-valoriser.html" class="btn-detail">Explorer mes travaux →</a>
+            </div>
+        </article>
+
+        <article class="comp-card border-developper">
+            <div class="card-content">
+                <div class="icon-box" style="color: var(--color-developper)">⚙️</div>
+                <h3>DÉVELOPPER</h3>
+                <span class="comp-subtitle">Création d'outils sur mesure</span>
+                <p>J'étudie le <strong>développement et le déploiement</strong> d'applications logicielles et outils BI pour comprendre l'automatisation du cycle de vie de la donnée.</p>
+                <a href="competences/c4-developper.html" class="btn-detail">Explorer mes travaux →</a>
+            </div>
+        </article>
+
+    </section>
+
+    <div style="max-width: 1400px; margin: 0 auto 4rem; padding: 0 8%;">
+        <div class="section-heading" style="margin-bottom: 1.5rem;">
+            <span class="heading-icon">🔎</span>
+            <h2 style="font-size: 1.4rem;">Mon Positionnement Étudiant</h2>
+            <div class="heading-line"></div>
+        </div>
+        <div class="info-block" style="border-left-color: var(--primary-color);">
+            <p style="font-size: 1.05rem; color: var(--text-color);">
+                Au fil de mes études, je développe une appétence particulière pour la <strong>conception d'outils décisionnels</strong> et l'<strong>automatisation des processus data</strong> (axes <em>Traiter</em> et <em>Développer</em>). Mon objectif de stage est d'apprendre à créer des <strong>architectures de données solides en amont</strong> pour garantir des reportings fiables en entreprise.
+            </p>
+        </div>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../index.html">Accueil</a>
+        <a href="about.html">Mon Parcours</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

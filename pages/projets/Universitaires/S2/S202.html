@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ 2.02 — Estimation par Échantillonnage - Karim KHITER</title>
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../../../../index.html">Karim K.</a></div>
+            <ul class="nav-links">
+                <li><a href="../../../../index.html">Accueil</a></li>
+                <li><a href="../../../about.html">Mon Parcours</a></li>
+                <li><a href="../../../competences.html">Compétences</a></li>
+                <li><a href="../../../projets.html" class="active">Projets</a></li>
+                <li><a href="../../../contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-detail-header bg-analyser">
+        <h1>Estimation par Échantillonnage — Données INSEE (CAF)</h1>
+        <div class="project-meta">
+            <span>📅 Semestre 2</span>
+            <span>🎓 SAÉ 2.02</span>
+            <span>⏱️ 10h</span>
+        </div>
+
+        <div class="project-authors">
+            <span class="author-label">Projet encadré par :</span>
+            <a href="https://annuaire-web.univ-lorraine.fr/p/christelle.breuils" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                Chrystelle BREUILS-DEGRYSE
+            </a>
+        </div>
+
+        <div class="project-authors" style="margin-top: 1rem; padding-top: 1rem;">
+            <span class="author-label">Réalisé par :</span>
+            <a href="https://www.linkedin.com/in/karim-khiter/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Karim KHITER
+            </a>
+            <a href="https://www.linkedin.com/in/he-guan-03a2b0332/" target="_blank" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                He GUAN
+            </a>
+            <a href="#" class="author-link">
+                <svg style="width:16px;height:16px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                Mamoudou NDAO
+            </a>
+        </div>
+    </header>
+
+    <main class="project-body">
+
+        <section class="detail-section">
+            <h2>Fiche d'Identité</h2>
+            <div class="info-grid">
+
+                <div class="info-block" style="border-left-color: var(--color-analyser);">
+                    <h3>🎯 Compétence ciblée</h3>
+                    <p>
+                        <span class="tag-comp tag-analyser" style="font-size:0.9rem;">Analyser</span>
+                        &nbsp;Analyser statistiquement les données
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>🛠️ Technologies & Outils</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">R / RStudio</span>
+                        <span class="resource-tag">RMarkdown</span>
+                        <span class="resource-tag">Statistique Inférentielle</span>
+                        <span class="resource-tag">Open Data (INSEE)</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>📚 Ressources mobilisées</h3>
+                    <div class="resource-list">
+                        <span class="resource-tag">R2.06 — Probabilités 2</span>
+                        <span class="resource-tag">R2.08 — Statistique inférentielle</span>
+                        <span class="resource-tag">R2.12 — PPP 2</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>🔑 Apprentissages Critiques</h3>
+                    <ul style="font-size: 0.85rem;">
+                        <li><strong>AC12.01 |</strong> Considérer les caractéristiques des sources</li>
+                        <li style="margin-top:0.4rem;"><strong>AC12.02 |</strong> Comprendre la nécessité de données propres</li>
+                        <li style="margin-top:0.4rem;"><strong>AC12.05 |</strong> Intérêt d'un modèle probabiliste</li>
+                        <li style="margin-top:0.4rem;"><strong>AC12.06 |</strong> Fluctuation d'échantillonnage et simulations</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Contexte et Mise en Situation</h2>
+            <div class="project-scenario" style="border-left-color: var(--color-analyser);">
+                <h3 style="color: var(--color-analyser);">Le Scénario</h3>
+                <p>
+                    Dans de nombreuses études marketing ou socio-démographiques, il est impossible d'interroger toute une population. En tant que <strong style="color: var(--text-color);">chargés d'étude statistique</strong>, nous avons dû réaliser des estimations à partir d'un échantillon pour en tirer des conclusions sur la population globale. Pour ce faire, nous avons travaillé sur un jeu de données réel issu de l'<strong>INSEE</strong> concernant les allocataires de la <strong>CAF</strong> (Caisse d'Allocations Familiales).
+                </p>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 0.6rem; color: var(--text-color);">Problématique</h3>
+            <p style="color: var(--text-light);">
+                Comment extrapoler les résultats d'un échantillon à une population entière tout en maîtrisant mathématiquement le risque d'erreur (intervalles de confiance) et la fluctuation d'échantillonnage à l'aide du langage R ?
+            </p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Démarche Technique</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-analyser);">Étape 1 — Préparation et Échantillonnage sous R</h3>
+                <p>
+                    Nous avons importé les données de l'INSEE dans RStudio. Avant toute analyse inférentielle, il a fallu traiter les données manquantes pour ne pas fausser nos calculs. Nous avons ensuite procédé à un <strong>sondage aléatoire simple</strong> (tirage au sort sans remise) pour extraire un échantillon représentatif de grandeurs mesurables.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--color-analyser);">Étape 2 — Intervalles de Confiance et Estimation</h3>
+                <p style="margin-bottom: 0.8rem;">
+                    À l'aide de scripts R, nous avons calculé les estimateurs ponctuels (moyenne, proportion) sur notre échantillon, puis nous avons construit des <strong>intervalles de confiance (généralement à 95%)</strong>. Cela permet d'affirmer, avec une marge d'erreur maîtrisée, dans quelle fourchette se situe la vraie valeur de la population globale (ex: le montant moyen des allocations perçues).
+                </p>
+                <div style="margin-top: 1.2rem;">
+                    <p style="font-size:0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Logique algorithmique utilisée sous RMarkdown :</p>
+                    <div style="background:#0d1117; border-radius:8px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; color:#d4d4d4; border: 1px solid rgba(255,255,255,0.06); overflow-x: auto;">
+<span style="color:#6a9955;"># Calcul de l'intervalle de confiance pour une moyenne</span><br>
+<span style="color:#dcdcaa;">n</span> &lt;- length(echantillon)<br>
+<span style="color:#dcdcaa;">moyenne_ech</span> &lt;- mean(echantillon)<br>
+<span style="color:#dcdcaa;">ecart_type</span> &lt;- sd(echantillon)<br>
+<span style="color:#dcdcaa;">marge_erreur</span> &lt;- qt(0.975, df=n-1) * (ecart_type / sqrt(n))<br>
+<span style="color:#dcdcaa;">IC</span> &lt;- c(moyenne_ech - marge_erreur, moyenne_ech + marge_erreur)
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser);">
+                <h3 style="color: var(--color-analyser);">Étape 3 — Simulation et Fluctuation</h3>
+                <p>
+                    Pour visualiser le concept mathématique, nous avons programmé une boucle simulant des centaines de tirages d'échantillons différents. Cela nous a permis de vérifier de manière empirique que la vraie moyenne de la population "tombe" bien dans nos intervalles de confiance dans 95% des cas, illustrant parfaitement la fluctuation d'échantillonnage.
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Grille d'Auto-évaluation</h2>
+            <div style="overflow-x: auto;">
+                <table class="evaluation-table">
+                    <thead>
+                        <tr>
+                            <th style="width:40%;">Apprentissage Critique</th>
+                            <th style="width:10%; text-align:center;">Insuffisant</th>
+                            <th style="width:10%; text-align:center;">Fragile</th>
+                            <th style="width:10%; text-align:center;">Bien</th>
+                            <th style="width:10%; text-align:center;">Très Bien</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AC12.01</strong> — Caractéristiques des sources</td>
+                            <td></td><td></td>
+                            <td class="center">✓</td>
+                            <td></td>
+                            <td>Compréhension du jeu de données INSEE (variables, unités, contraintes).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC12.02</strong> — Nécessité de données propres</td>
+                            <td></td><td></td>
+                            <td class="center">✓</td>
+                            <td></td>
+                            <td>Nettoyage correct sous R avant de lancer les fonctions statistiques.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC12.05</strong> — Utilisation d'un modèle probabiliste</td>
+                            <td></td>
+                            <td class="center" style="color: #fb923c;">✓</td>
+                            <td></td>
+                            <td></td>
+                            <td>Notion parfois complexe à justifier théoriquement (choix de la loi de Student vs loi Normale selon la taille de l'échantillon).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AC12.06</strong> — Fluctuation d'échantillonnage</td>
+                            <td></td><td></td>
+                            <td class="center">✓</td>
+                            <td></td>
+                            <td>Réalisation réussie de la simulation sous R permettant de visualiser empiriquement les variations.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Analyse Réflexive</h2>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-analyser);">L'incertitude maîtrisée</h3>
+                <p>
+                    Ce projet m'a fait passer de la statistique purement descriptive (décrire ce qu'on voit) à la statistique inférentielle (déduire ce qu'on ne voit pas). J'ai compris qu'en data science, donner un chiffre unique (ex: "la moyenne est de 400€") n'a aucune valeur si on ne lui associe pas une marge d'erreur. Le décideur a besoin de connaître l'intervalle de confiance pour évaluer son risque.
+                </p>
+            </div>
+
+            <div class="info-block" style="border-left-color: var(--color-analyser); margin-bottom: 1.2rem;">
+                <h3 style="color: var(--color-analyser);">La puissance de R et de la simulation</h3>
+                <p>
+                    Bien que les mathématiques sous-jacentes (AC12.05) m'aient parfois demandé plus d'efforts d'abstraction, coder les simulations sous R m'a permis de visualiser concrètement des théorèmes abstraits. Rédiger le rapport final avec <strong>RMarkdown</strong> a été une excellente initiation à la recherche reproductible (mêler code, résultats et texte explicatif).
+                </p>
+            </div>
+        </section>
+
+        <section class="detail-section" style="text-align: center; margin-top: 40px; padding: 2rem; background: var(--card-bg-2); border-radius: 12px; border: 1px dashed rgba(56, 189, 248, 0.4);">
+            <h3 style="color: #38bdf8; margin-bottom: 0.5rem;">⏳ Livrables en cours de préparation</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                Les fichiers liés à ce projet (rapports, scripts, jeux de données) ne sont pas encore disponibles au téléchargement. <strong>Je suis actuellement en train de les modifier afin de les rendre conformes</strong> pour une publication publique (nettoyage du code, anonymisation des données). Ils seront ajoutés très prochainement.
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../../../projets.html" class="btn-secondary">← Retour aux projets</a>
+        </div>
+
+    </main>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="../../../../index.html">Accueil</a>
+        <a href="../../../about.html">Mon Parcours</a>
+        <a href="../../../competences.html">Compétences</a>
+        <a href="../../../projets.html">Projets</a>
+        <a href="../../../contact.html">Contact</a>
+    </div>
+
+    <script src="../../../../scripts/main.js"></script>
+</body>
+</html>
