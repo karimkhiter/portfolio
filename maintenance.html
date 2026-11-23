@@ -1,0 +1,440 @@
+<title>Karim Khiter</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  /* Layout: single centred column, vertically balanced */
+  :root {
+    --paper:        #FAF9F6;
+    --paper-raised: #FFFFFF;
+    --ink:          #1E2126;
+    --ink-soft:     #565A60;
+    --ink-faint:    #8A8D92;
+    --accent:       #2E4A5C;
+    --accent-tint:  #E7EDEF;
+    --line:         #E2DFD5;
+
+    --f-display: 'Source Serif 4', Georgia, serif;
+    --f-body:    'IBM Plex Sans', system-ui, sans-serif;
+
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Light-only: dark-mode blocks removed intentionally */
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    min-height: 100%;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--f-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-block: 4rem;
+    padding-left:  max(24px, env(safe-area-inset-left,  0px));
+    padding-right: max(24px, env(safe-area-inset-right, 0px));
+    text-align: center;
+  }
+
+  /* Decorative blob */
+  body::before {
+    content: '';
+    position: fixed;
+    top: -10vh; right: -8vw;
+    width: clamp(240px, 40vw, 520px);
+    height: clamp(240px, 40vw, 520px);
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-tint) 0%, transparent 70%);
+    z-index: 0;
+    animation: blob 18s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes blob {
+    0%, 100% { transform: translate(0,  0)   scale(1);    }
+    50%       { transform: translate(-20px, 18px) scale(1.06); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body::before { animation: none; }
+    .card { animation: none !important; opacity: 1 !important; }
+  }
+
+  /* Card */
+  .card {
+    position: relative;
+    z-index: 1;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 3rem 2.5rem 2.5rem;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 4px 32px rgba(30,33,38,.06);
+    opacity: 0;
+    animation: rise 0.6s var(--ease) 0.1s forwards;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Status dot + label */
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 2rem;
+  }
+
+  .status-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1);    }
+    50%       { opacity: .45; transform: scale(1.3); }
+  }
+
+  /* Wordmark */
+  .name {
+    font-family: var(--f-display);
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+    text-wrap: balance;
+    margin-bottom: .6rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 36ch;
+    margin: 0 auto 2.2rem;
+    text-wrap: balance;
+  }
+
+  /* Divider */
+  .divider {
+    width: 36px;
+    height: 1px;
+    background: var(--line);
+    margin: 0 auto 2rem;
+  }
+
+  /* Info row */
+  .info {
+    font-size: 0.84rem;
+    color: var(--ink-faint);
+    line-height: 1.6;
+  }
+
+  .info a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+
+  .info a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  /* Footer */
+  .footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+  }
+
+  /* ── Mini-jeu ── */
+  .game-wrap {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 480px;
+    opacity: 0;
+    animation: rise 0.6s var(--ease) 0.3s forwards;
+  }
+
+  .game-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.75rem;
+  }
+
+  .game-box {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 12px rgba(30,33,38,.04);
+  }
+
+  #snake-canvas {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    touch-action: none;
+  }
+
+  .game-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.9rem;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  .score-val {
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .game-hint {
+    font-size: 0.75rem;
+    color: var(--ink-faint);
+  }
+
+  #start-btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.45rem 1.1rem;
+    font-family: var(--f-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  #start-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+</style>
+
+<div class="card">
+  <div class="status">
+    <span class="status-dot"></span>
+    En construction
+  </div>
+
+  <h1 class="name">Portfolio de Karim Khiter</h1>
+  <p class="tagline">Mon portfolio est en cours de refonte. Il sera de retour très prochainement.</p>
+
+  <div class="divider"></div>
+
+  <p class="info">
+    En attendant, contactez-moi sur&nbsp;<a href="https://www.linkedin.com/in/karim-khiter/" target="_blank">LinkedIn</a>
+    ou par email à&nbsp;<span style="color: var(--ink-soft); font-weight: 500; user-select: all;">pro.khiter.karim@gmail.com</span>
+  </p>
+</div>
+
+<div class="game-wrap">
+  <p class="game-label">En attendant, un petit Snake</p>
+  <div class="game-box">
+    <canvas id="snake-canvas" width="320" height="240"></canvas>
+    <div class="game-meta">
+      <span>Score&nbsp;<span class="score-val" id="score">0</span></span>
+      <button id="start-btn">Jouer</button>
+      <span class="game-hint" id="hint">↑ ↓ ← → ou ZQSD</span>
+    </div>
+  </div>
+</div>
+
+<p class="footer" style="margin-top:1.5rem;">BUT Science des Données &middot; IUT de Metz</p>
+
+<script>
+(function(){
+  const canvas = document.getElementById('snake-canvas');
+  const ctx    = canvas.getContext('2d');
+  const btn    = document.getElementById('start-btn');
+  const scoreEl= document.getElementById('score');
+  const hint   = document.getElementById('hint');
+
+  const COLS = 20, ROWS = 15;
+  const CW = canvas.width / COLS, CH = canvas.height / ROWS;
+
+  // Colors from CSS vars (light theme fixed)
+  const C = {
+    bg:     '#FAF9F6',
+    grid:   '#E2DFD5',
+    snake:  '#2E4A5C',
+    head:   '#1E3345',
+    food:   '#8B6A3D',
+    text:   '#1E2126',
+    soft:   '#565A60',
+  };
+
+  let snake, dir, next, food, score, running, raf, last, speed;
+
+  function rand(max){ return Math.floor(Math.random()*max); }
+
+  function newFood(){
+    let f;
+    do { f = {x:rand(COLS), y:rand(ROWS)}; }
+    while(snake.some(s=>s.x===f.x&&s.y===f.y));
+    return f;
+  }
+
+  function init(){
+    snake = [{x:10,y:7},{x:9,y:7},{x:8,y:7}];
+    dir   = {x:1,y:0};
+    next  = {x:1,y:0};
+    food  = newFood();
+    score = 0;
+    speed = 130;
+    scoreEl.textContent = 0;
+    running = true;
+    last    = 0;
+    btn.textContent = 'Rejouer';
+    hint.textContent = '↑ ↓ ← → ou ZQSD';
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(loop);
+  }
+
+  function loop(ts){
+    if(!running) return;
+    raf = requestAnimationFrame(loop);
+    if(ts - last < speed) return;
+    last = ts;
+
+    dir = {...next};
+    const head = {x:snake[0].x+dir.x, y:snake[0].y+dir.y};
+
+    // Wall collision
+    if(head.x<0||head.x>=COLS||head.y<0||head.y>=ROWS){ return end(); }
+    // Self collision
+    if(snake.some(s=>s.x===head.x&&s.y===head.y)){ return end(); }
+
+    snake.unshift(head);
+    if(head.x===food.x&&head.y===food.y){
+      score++;
+      scoreEl.textContent = score;
+      food = newFood();
+      speed = Math.max(55, speed - 3);
+    } else {
+      snake.pop();
+    }
+    draw();
+  }
+
+  function end(){
+    running = false;
+    draw();
+    ctx.fillStyle = 'rgba(250,249,246,0.82)';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle = C.text;
+    ctx.font = `600 15px 'IBM Plex Sans', sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('Game over', canvas.width/2, canvas.height/2 - 10);
+    ctx.font = `400 12px 'IBM Plex Sans', sans-serif`;
+    ctx.fillStyle = C.soft;
+    ctx.fillText(`Score : ${score}`, canvas.width/2, canvas.height/2 + 10);
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    // Grid dots
+    ctx.fillStyle = C.grid;
+    for(let x=0;x<COLS;x++) for(let y=0;y<ROWS;y++){
+      ctx.beginPath();
+      ctx.arc(x*CW+CW/2, y*CH+CH/2, 0.8, 0, Math.PI*2);
+      ctx.fill();
+    }
+
+    // Food
+    ctx.fillStyle = C.food;
+    const fx = food.x*CW + CW/2, fy = food.y*CH + CH/2, fr = CW*0.3;
+    ctx.beginPath();
+    ctx.arc(fx, fy, fr, 0, Math.PI*2);
+    ctx.fill();
+
+    // Snake
+    snake.forEach((seg, i)=>{
+      const r = CW * (i===0 ? 0.4 : 0.32);
+      ctx.fillStyle = i===0 ? C.head : C.snake;
+      ctx.globalAlpha = i===0 ? 1 : Math.max(0.4, 1 - i*0.04);
+      ctx.beginPath();
+      ctx.roundRect(seg.x*CW+1, seg.y*CH+1, CW-2, CH-2, r);
+      ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+  }
+
+  // Draw idle state
+  function idle(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle = C.grid;
+    for(let x=0;x<COLS;x++) for(let y=0;y<ROWS;y++){
+      ctx.beginPath();
+      ctx.arc(x*CW+CW/2, y*CH+CH/2, 0.8, 0, Math.PI*2);
+      ctx.fill();
+    }
+    ctx.fillStyle = C.soft;
+    ctx.font = `400 12px 'IBM Plex Sans', sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('Appuyez sur Jouer pour commencer', canvas.width/2, canvas.height/2);
+  }
+  idle();
+
+  btn.addEventListener('click', init);
+
+  // Keyboard
+  document.addEventListener('keydown', e=>{
+    const map = {
+      ArrowUp:{x:0,y:-1}, ArrowDown:{x:0,y:1},
+      ArrowLeft:{x:-1,y:0}, ArrowRight:{x:1,y:0},
+      z:{x:0,y:-1}, q:{x:-1,y:0}, s:{x:0,y:1}, d:{x:1,y:0},
+      Z:{x:0,y:-1}, Q:{x:-1,y:0}, S:{x:0,y:1}, D:{x:1,y:0},
+    };
+    const n = map[e.key];
+    if(!n) return;
+    if(n.x+dir.x===0&&n.y+dir.y===0) return; // no 180
+    next = n;
+    if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.key)) e.preventDefault();
+  });
+
+  // Touch swipe
+  let tx=0,ty=0;
+  canvas.addEventListener('touchstart', e=>{ tx=e.touches[0].clientX; ty=e.touches[0].clientY; }, {passive:true});
+  canvas.addEventListener('touchend', e=>{
+    const dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty;
+    if(Math.abs(dx)<10&&Math.abs(dy)<10) return;
+    if(Math.abs(dx)>Math.abs(dy)){
+      next = dx>0 ? {x:1,y:0} : {x:-1,y:0};
+    } else {
+      next = dy>0 ? {x:0,y:1} : {x:0,y:-1};
+    }
+  }, {passive:true});
+})();
+</script>
