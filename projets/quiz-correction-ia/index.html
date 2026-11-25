@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Un quiz web corrigé par un modèle de langage · Karim Khiter</title>
+<meta name="description" content="Une application Dash qui génère des quiz à partir d&#x27;un fichier YAML et fait corriger les réponses ouvertes par un LLM, avec une note extraite automatiquement.">
+<link rel="canonical" href="https://karimkhiter.github.io/portfolio/projets/quiz-correction-ia/">
+<meta name="author" content="Karim Khiter">
+<meta name="theme-color" content="#F3ECE3">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Karim Khiter">
+<meta property="og:title" content="Un quiz web corrigé par un modèle de langage · Karim Khiter">
+<meta property="og:description" content="Une application Dash qui génère des quiz à partir d&#x27;un fichier YAML et fait corriger les réponses ouvertes par un LLM, avec une note extraite automatiquement.">
+<meta property="og:url" content="https://karimkhiter.github.io/portfolio/projets/quiz-correction-ia/">
+<meta property="og:image" content="https://karimkhiter.github.io/portfolio/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Karim Khiter, portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<script>(function(){var t=null;try{t=localStorage.getItem("theme")}catch(e){}var d=document.documentElement;d.setAttribute("data-theme",t==="dark"?"dark":"light");d.className="js"})();</script>
+
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../../">Karim Khiter<span class="brand-dot" aria-hidden="true">.</span><span class="visually-hidden"> : accueil</span></a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <ul><li><a href="../../projets/" aria-current="page">Projets</a></li><li><a href="../../parcours/">Parcours</a></li><li><a href="../../competences/">Compétences</a></li><li><a href="../../formation/">Formation</a></li><li><a href="../../profil/">Profil</a></li></ul>
+      <div class="nav-extra">
+        <a class="btn btn--primary" href="../../contact/">Me contacter</a>
+        <a class="btn" href="../../assets/docs/CV-Karim-Khiter.pdf"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CV (PDF)</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary header-cta" href="../../contact/">Me contacter</a>
+      <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Activer le thème sombre"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="contenu" tabindex="-1">
+
+<article>
+<header class="case-hero">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="../../">Accueil</a></li><li><a href="../../projets/">Projets</a></li><li aria-current="page">Quiz corrigé par IA</li></ol></nav>
+    <p class="kicker">Projet suivi · Semestre 3 · équipe de 3</p>
+    <h1>Un quiz web corrigé par un modèle de langage</h1>
+    <p class="lead">Une application Dash qui génère des quiz à partir d’un fichier YAML et fait corriger les réponses ouvertes par un LLM, avec une note extraite automatiquement.</p>
+    <dl class="case-meta"><div><dt>Période</dt><dd>Octobre 2025 · 3 mois</dd></div><div><dt>Type</dt><dd>Projet suivi</dd></div><div><dt>Équipe</dt><dd>Équipe de 3</dd></div><div><dt>Statut</dt><dd>Terminé</dd></div></dl>
+    <div class="case-cover is-gen" aria-hidden="true"><div class="gen-cover" data-cat="ia"><svg viewBox="0 0 840 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><ellipse class="ring" cx="579.6" cy="121.6" rx="121.6" ry="63.2" transform="rotate(16 579.6 121.6)"/><ellipse class="ring r2" cx="579.6" cy="121.6" rx="192.0" ry="99.8" transform="rotate(17 579.6 121.6)"/><ellipse class="ring" cx="579.6" cy="121.6" rx="275.2" ry="143.1" transform="rotate(-1 579.6 121.6)"/><circle class="planet" cx="579.6" cy="121.6" r="64.0"/><circle class="moon" cx="397.0" cy="145.8" r="17.9"/></svg><span class="gen-label">Projet suivi</span><span class="gen-sub">IA · Applications</span></div></div>
+  </div>
+</header>
+<div class="wrap case-body">
+  <div class="prose"><h2>Le problème</h2><p class="problem">Corriger des questions ouvertes prend du temps. Peut-on confier une première évaluation à un modèle de langage, sans que l’enseignant ait à coder ?</p><h2>Contexte</h2><p>Projet suivi de programmation sur un semestre : concevoir une application d’évaluation complète, de l’interface à la correction.</p><h2>La démarche</h2><ol class="steps"><li><div><h3>Séparer le contenu du code</h3><p>Questions et consigne de correction dans un fichier YAML qu’un enseignant peut modifier sans toucher au Python.</p></div></li><li><div><h3>Brancher un modèle de langage</h3><p>La bibliothèque openai est redirigée vers un modèle open source hébergé chez Hugging Face : une syntaxe standard, un modèle au choix.</p></div></li><li><div><h3>Imposer un format de réponse</h3><p>Le prompt exige un commentaire puis une dernière ligne « score = X », extraite par une expression régulière.</p></div></li><li><div><h3>Gérer l’état de l’interface</h3><p>Dash et callbacks dynamiques pour naviguer entre les questions et sauvegarder les réponses sans recharger la page.</p></div></li><li><div><h3>Installer en un clic</h3><p>Fichier requirements.txt et script batch d’installation.</p></div></li></ol><h2>Livrables</h2><ul class="checklist"><li>Application Dash</li><li>Fichier de quiz YAML d’exemple</li><li>Script d’installation</li></ul><h2>Limites</h2><ul class="checklist limits"><li>Un modèle génératif a tendance à « bavarder » : son format de sortie doit être contraint puis vérifié.</li><li>Livrables pas encore publiés.</li></ul><div class="learned"><h2>Ce que j’en retiens</h2><p>Faire tourner un script sur sa machine et livrer un outil distribuable sont deux choses différentes. Une IA intégrée à un logiciel doit être fortement encadrée.</p></div></div>
+  <aside class="aside-box" aria-label="Fiche technique">
+<div class="card"><h2>Technologies</h2><ul class="tag-list"><li class="tag">Python</li><li class="tag">Dash (Plotly)</li><li class="tag">LLM via API</li><li class="tag">Prompt engineering</li><li class="tag">Scripts batch</li></ul></div>
+<div class="card"><h2>Catégories</h2><ul class="tag-list"><li class="tag tag--cat" data-cat="ia">IA &amp; expérimentation</li><li class="tag tag--cat" data-cat="apps">Applications &amp; automatisation</li></ul></div>
+
+</aside>
+</div>
+<div class="wrap" style="padding-bottom:4rem"><nav class="pager" aria-label="Projet précédent et suivant"><a class="prev" href="../../projets/entrepot-donnees-associations-joafe/"><small>← Précédent</small>Alimenter un entrepôt de données avec le Journal officiel</a><a class="next" href="../../projets/analyse-prix-grande-distribution/"><small>Suivant →</small>Comparer les prix de trois supermarchés du Pas-de-Calais</a></nav></div>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">Karim Khiter</p>
+        <p class="footer-sign">Curieux de nature. En construction, par choix.</p>
+      </div>
+      <nav aria-label="Plan du site">
+        <h2>Explorer</h2>
+        <ul>
+          <li><a href="../../">Accueil</a></li>
+          <li><a href="../../projets/">Projets</a></li><li><a href="../../parcours/">Parcours</a></li><li><a href="../../competences/">Compétences</a></li><li><a href="../../formation/">Formation</a></li><li><a href="../../profil/">Profil</a></li>
+          <li><a href="../../formation/sae/">SAÉ</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:pro.khiter.karim@gmail.com">pro.khiter.karim@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/karim-khiter" rel="me noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/karimkhiter" rel="me noopener">GitHub</a></li>
+          <li><a href="../../assets/docs/CV-Karim-Khiter.pdf">CV (PDF)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Karim Khiter · Metz</span>
+      <span>Mis à jour le 23 novembre 2026</span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+</body>
+</html>
